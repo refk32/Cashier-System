@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D623795-AE1A-4FE9-B3DF-0DD78B7155C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Aplikasi_Kasir.My.MyApplication</StartupObject>
+    <RootNamespace>Aplikasi_Kasir</RootNamespace>
+    <AssemblyName>Aplikasi Kasir</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Aplikasi Kasir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Aplikasi Kasir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form Admin Diskon.Designer.vb">
+      <DependentUpon>Form Admin Diskon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin Diskon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Admin Pajak.Designer.vb">
+      <DependentUpon>Form Admin Pajak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin Pajak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Master.Designer.vb">
+      <DependentUpon>Form Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Karyawan.Designer.vb">
+      <DependentUpon>Form Report Karyawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Karyawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Master Transaksi.Designer.vb">
+      <DependentUpon>Form Report Master Transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Master Transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Transaksi Karyawan.Designer.vb">
+      <DependentUpon>Form Report Transaksi Karyawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Transaksi Karyawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Transaksi Semua Karyawan.Designer.vb">
+      <DependentUpon>Form Report Transaksi Semua Karyawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Transaksi Semua Karyawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report.Designer.vb">
+      <DependentUpon>Form Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report Karyawan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Karyawan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report Master Transaksi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Master Transaksi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Menu.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Menu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form Admin Karyawan Edit.Designer.vb">
+      <DependentUpon>Form Admin Karyawan Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin Karyawan Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Admin Karyawan Input.Designer.vb">
+      <DependentUpon>Form Admin Karyawan Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin Karyawan Input.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Admin Karyawan.Designer.vb">
+      <DependentUpon>Form Admin Karyawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin Karyawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Admin Menu Edit.Designer.vb">
+      <DependentUpon>Form Admin Menu Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin Menu Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Admin Menu Input.Designer.vb">
+      <DependentUpon>Form Admin Menu Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin Menu Input.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Admin Menu.Designer.vb">
+      <DependentUpon>Form Admin Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Admin.Designer.vb">
+      <DependentUpon>Form Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Kasir Kasir.Designer.vb">
+      <DependentUpon>Form Kasir Kasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Kasir Kasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Kasir.Designer.vb">
+      <DependentUpon>Form Kasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Kasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Lupa Password.Designer.vb">
+      <DependentUpon>Form Lupa Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Lupa Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Menu.Designer.vb">
+      <DependentUpon>Form Report Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Riwayat Transaksi.Designer.vb">
+      <DependentUpon>Form Riwayat Transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Riwayat Transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ubah Password.Designer.vb">
+      <DependentUpon>Form Ubah Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Ubah Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Login.Designer.vb">
+      <DependentUpon>Form Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report Transaksi Semua Karyawan.vb">
+      <DependentUpon>Report Transaksi Semua Karyawan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report Transaksi Karyawan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Transaksi Karyawan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Transaksi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Transaksi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form Admin Diskon.resx">
+      <DependentUpon>Form Admin Diskon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Admin Pajak.resx">
+      <DependentUpon>Form Admin Pajak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Master.resx">
+      <DependentUpon>Form Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Karyawan.resx">
+      <DependentUpon>Form Report Karyawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Master Transaksi.resx">
+      <DependentUpon>Form Report Master Transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Transaksi Karyawan.resx">
+      <DependentUpon>Form Report Transaksi Karyawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Transaksi Semua Karyawan.resx">
+      <DependentUpon>Form Report Transaksi Semua Karyawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report.resx">
+      <DependentUpon>Form Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Karyawan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Karyawan.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Master Transaksi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Master Transaksi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Menu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Menu.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Admin Karyawan Edit.resx">
+      <DependentUpon>Form Admin Karyawan Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Admin Karyawan Input.resx">
+      <DependentUpon>Form Admin Karyawan Input.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Admin Karyawan.resx">
+      <DependentUpon>Form Admin Karyawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Admin Menu Edit.resx">
+      <DependentUpon>Form Admin Menu Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Admin Menu Input.resx">
+      <DependentUpon>Form Admin Menu Input.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Admin Menu.resx">
+      <DependentUpon>Form Admin Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Admin.resx">
+      <DependentUpon>Form Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Kasir Kasir.resx">
+      <DependentUpon>Form Kasir Kasir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Kasir.resx">
+      <DependentUpon>Form Kasir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Lupa Password.resx">
+      <DependentUpon>Form Lupa Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Menu.resx">
+      <DependentUpon>Form Report Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Riwayat Transaksi.resx">
+      <DependentUpon>Form Riwayat Transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Ubah Password.resx">
+      <DependentUpon>Form Ubah Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Login.resx">
+      <DependentUpon>Form Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Transaksi Semua Karyawan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Transaksi Semua Karyawan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Transaksi Karyawan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Transaksi Karyawan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Transaksi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Transaksi.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

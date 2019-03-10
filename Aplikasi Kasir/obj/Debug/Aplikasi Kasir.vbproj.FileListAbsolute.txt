@@ -1,0 +1,59 @@
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Report Karyawan.rpt
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Report Menu.rpt
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Report Transaksi.rpt
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Report Karyawan.vb
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Report Menu.vb
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Report Transaksi.vb
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Aplikasi Kasir.exe.config
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Aplikasi Kasir.exe
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Aplikasi Kasir.pdb
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\Aplikasi Kasir.xml
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.Shared.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\FlashControlV71.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\ShockwaveFlashObjects.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\bin\Debug\stdole.dll
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Master.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Karyawan.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Master_Transaksi.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Transaksi_Karyawan.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Transaksi_Semua_Karyawan.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Karyawan_Edit.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Karyawan_Input.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Karyawan.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Menu_Edit.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Menu_Input.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Menu.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Kasir_Kasir.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Kasir.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Lupa_Password.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Menu.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Riwayat_Transaksi.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Ubah_Password.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Login.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Resources.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbproj.GenerateResource.cache
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbproj.CoreCompileInputs.cache
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbproj.CopyComplete
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.exe
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.xml
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.pdb
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbprojAssemblyReference.cache
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Diskon.resources
+D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Pajak.resources
