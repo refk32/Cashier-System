@@ -4,7 +4,9 @@
 
     Private Sub CrystalReportViewer1_Load(sender As Object, e As EventArgs) Handles CrystalReportViewer1.Load
 
-        CrystalReportViewer1.ReportSource = "D:\Cashier-System-refk-dev\Aplikasi Kasir\Report Master Transaksi.rpt"
+        Dim reportdetail As New Report_Detail_Transaksi
+
+        CrystalReportViewer1.ReportSource = reportdetail
         CrystalReportViewer1.SelectionFormula = "{Table_MasterTR.id_tr} = '" + id_tr + "'"
         CrystalReportViewer1.Refresh()
         CrystalReportViewer1.RefreshReport()

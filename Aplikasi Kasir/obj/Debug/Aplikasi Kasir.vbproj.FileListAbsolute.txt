@@ -57,3 +57,62 @@ D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.pdb
 D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbprojAssemblyReference.cache
 D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Diskon.resources
 D:\Cashier-System-refk-dev\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Pajak.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Report Karyawan.rpt
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Report Menu.rpt
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Report Transaksi.rpt
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Report Karyawan.vb
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Report Menu.vb
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Report Transaksi.vb
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Aplikasi Kasir.exe.config
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Aplikasi Kasir.exe
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Aplikasi Kasir.pdb
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\Aplikasi Kasir.xml
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\FlashControlV71.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\bin\Debug\stdole.dll
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbprojAssemblyReference.cache
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Diskon.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Pajak.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Master.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Karyawan.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Master_Transaksi.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Transaksi_Karyawan.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Transaksi_Semua_Karyawan.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Karyawan_Edit.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Karyawan_Input.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Karyawan.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Menu_Edit.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Menu_Input.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin_Menu.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Admin.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Kasir_Kasir.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Kasir.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Lupa_Password.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Menu.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Riwayat_Transaksi.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Ubah_Password.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Login.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Resources.resources
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbproj.GenerateResource.cache
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbproj.CoreCompileInputs.cache
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.vbproj.CopyComplete
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.exe
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.xml
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.pdb
