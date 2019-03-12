@@ -7,7 +7,7 @@ Public Class Form_Ubah_Password
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles OkBT.Click
 
-        Dim query As String = "update table_karyawan set pass_kry = '" + PasswordTB.Text + "'  where id_kry = '" + ID + "' "
+        Dim query As String = "update table_karyawan set pass_kry = '" + ConfirmTB.Text + "'  where id_kry = '" + ID + "' "
 
         Dim result As MsgBoxResult
 
@@ -23,9 +23,9 @@ Public Class Form_Ubah_Password
 
     End Sub
 
-    Private Sub PasswordTB_TextChanged(sender As Object, e As EventArgs) Handles PasswordTB.TextChanged
+    Private Sub PasswordTB_TextChanged(sender As Object, e As EventArgs) Handles ConfirmTB.TextChanged
 
-        If PasswordTB.Text.Contains(" ") Then
+        If ConfirmTB.Text.Contains(" ") Then
 
             PasswordLBL.Visible = True
             PasswordLBL.Text = "Tidak boleh ada spasi"
@@ -43,7 +43,7 @@ Public Class Form_Ubah_Password
 
     Private Sub PasswordTB2_TextChanged(sender As Object, e As EventArgs) Handles PasswordTB2.TextChanged
 
-        If Not String.Equals(PasswordTB.Text, PasswordTB2.Text) And Not String.IsNullOrWhiteSpace(PasswordTB2.Text) Then
+        If Not String.Equals(ConfirmTB.Text, PasswordTB2.Text) And Not String.IsNullOrWhiteSpace(PasswordTB2.Text) Then
 
             PasswordLBL2.Visible = True
             PasswordLBL2.Text = "Password harus sama"
@@ -60,7 +60,7 @@ Public Class Form_Ubah_Password
 
     Sub ControlSave()
 
-        If PasswordLBL.Visible Or PasswordLBL2.Visible Or String.IsNullOrWhiteSpace(PasswordTB.Text) Or String.IsNullOrWhiteSpace(PasswordTB2.Text) Then
+        If PasswordLBL.Visible Or PasswordLBL2.Visible Or String.IsNullOrWhiteSpace(ConfirmTB.Text) Or String.IsNullOrWhiteSpace(PasswordTB2.Text) Then
 
             OkBT.Enabled = False
 

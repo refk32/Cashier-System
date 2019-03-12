@@ -42,11 +42,16 @@ Partial Class Form_Admin_Karyawan_Edit
         Me.IDLBL = New System.Windows.Forms.Label()
         Me.NamaLBL = New System.Windows.Forms.Label()
         Me.BackBT = New System.Windows.Forms.Button()
+        Me.ConfirmLBL = New System.Windows.Forms.Label()
+        Me.ConfirmTB = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.ConfirmCheck = New System.Windows.Forms.CheckBox()
+        Me.PasswordCheck = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'SaveBT
         '
-        Me.SaveBT.Location = New System.Drawing.Point(339, 385)
+        Me.SaveBT.Location = New System.Drawing.Point(339, 420)
         Me.SaveBT.Name = "SaveBT"
         Me.SaveBT.Size = New System.Drawing.Size(75, 42)
         Me.SaveBT.TabIndex = 21
@@ -58,14 +63,14 @@ Partial Class Form_Admin_Karyawan_Edit
         Me.PertanyaanCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.PertanyaanCB.FormattingEnabled = True
         Me.PertanyaanCB.Items.AddRange(New Object() {"Siapa nama peliharaan anda ?", "Siapa nama guru pertama anda ?", "Apa nama sekolah SD anda ?", "Apa nama film favorit anda ?", "Apa nama Kartun favorit anda ?", "Siapa aktor kesukaan anda ?"})
-        Me.PertanyaanCB.Location = New System.Drawing.Point(201, 281)
+        Me.PertanyaanCB.Location = New System.Drawing.Point(201, 322)
         Me.PertanyaanCB.Name = "PertanyaanCB"
         Me.PertanyaanCB.Size = New System.Drawing.Size(213, 21)
         Me.PertanyaanCB.TabIndex = 34
         '
         'JawabanTB
         '
-        Me.JawabanTB.Location = New System.Drawing.Point(201, 331)
+        Me.JawabanTB.Location = New System.Drawing.Point(201, 372)
         Me.JawabanTB.MaxLength = 30
         Me.JawabanTB.Name = "JawabanTB"
         Me.JawabanTB.Size = New System.Drawing.Size(213, 20)
@@ -75,7 +80,7 @@ Partial Class Form_Admin_Karyawan_Edit
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(28, 329)
+        Me.Label7.Location = New System.Drawing.Point(28, 370)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(136, 20)
         Me.Label7.TabIndex = 33
@@ -85,7 +90,7 @@ Partial Class Form_Admin_Karyawan_Edit
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(28, 283)
+        Me.Label6.Location = New System.Drawing.Point(28, 324)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(153, 20)
         Me.Label6.TabIndex = 32
@@ -96,6 +101,7 @@ Partial Class Form_Admin_Karyawan_Edit
         Me.PasswordTB.Location = New System.Drawing.Point(201, 238)
         Me.PasswordTB.MaxLength = 20
         Me.PasswordTB.Name = "PasswordTB"
+        Me.PasswordTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.PasswordTB.Size = New System.Drawing.Size(213, 20)
         Me.PasswordTB.TabIndex = 31
         '
@@ -192,7 +198,7 @@ Partial Class Form_Admin_Karyawan_Edit
         Me.JawabanLBL.AutoSize = True
         Me.JawabanLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.JawabanLBL.ForeColor = System.Drawing.Color.Red
-        Me.JawabanLBL.Location = New System.Drawing.Point(447, 335)
+        Me.JawabanLBL.Location = New System.Drawing.Point(447, 376)
         Me.JawabanLBL.Name = "JawabanLBL"
         Me.JawabanLBL.Size = New System.Drawing.Size(56, 16)
         Me.JawabanLBL.TabIndex = 39
@@ -204,7 +210,7 @@ Partial Class Form_Admin_Karyawan_Edit
         Me.PasswordLBL.AutoSize = True
         Me.PasswordLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordLBL.ForeColor = System.Drawing.Color.Red
-        Me.PasswordLBL.Location = New System.Drawing.Point(447, 242)
+        Me.PasswordLBL.Location = New System.Drawing.Point(482, 241)
         Me.PasswordLBL.Name = "PasswordLBL"
         Me.PasswordLBL.Size = New System.Drawing.Size(56, 16)
         Me.PasswordLBL.TabIndex = 38
@@ -237,18 +243,74 @@ Partial Class Form_Admin_Karyawan_Edit
         '
         'BackBT
         '
-        Me.BackBT.Location = New System.Drawing.Point(609, 17)
+        Me.BackBT.Location = New System.Drawing.Point(854, 15)
         Me.BackBT.Name = "BackBT"
         Me.BackBT.Size = New System.Drawing.Size(88, 42)
         Me.BackBT.TabIndex = 40
         Me.BackBT.Text = "Back"
         Me.BackBT.UseVisualStyleBackColor = True
         '
+        'ConfirmLBL
+        '
+        Me.ConfirmLBL.AutoSize = True
+        Me.ConfirmLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConfirmLBL.ForeColor = System.Drawing.Color.Red
+        Me.ConfirmLBL.Location = New System.Drawing.Point(482, 283)
+        Me.ConfirmLBL.Name = "ConfirmLBL"
+        Me.ConfirmLBL.Size = New System.Drawing.Size(56, 16)
+        Me.ConfirmLBL.TabIndex = 43
+        Me.ConfirmLBL.Text = "Label10"
+        Me.ConfirmLBL.Visible = False
+        '
+        'ConfirmTB
+        '
+        Me.ConfirmTB.Location = New System.Drawing.Point(201, 278)
+        Me.ConfirmTB.MaxLength = 20
+        Me.ConfirmTB.Name = "ConfirmTB"
+        Me.ConfirmTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
+        Me.ConfirmTB.Size = New System.Drawing.Size(213, 20)
+        Me.ConfirmTB.TabIndex = 41
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(28, 279)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(156, 20)
+        Me.Label9.TabIndex = 42
+        Me.Label9.Text = "Konfirmasi Password"
+        '
+        'ConfirmCheck
+        '
+        Me.ConfirmCheck.AutoSize = True
+        Me.ConfirmCheck.Location = New System.Drawing.Point(420, 280)
+        Me.ConfirmCheck.Name = "ConfirmCheck"
+        Me.ConfirmCheck.Size = New System.Drawing.Size(56, 17)
+        Me.ConfirmCheck.TabIndex = 45
+        Me.ConfirmCheck.Text = "Visible"
+        Me.ConfirmCheck.UseVisualStyleBackColor = True
+        '
+        'PasswordCheck
+        '
+        Me.PasswordCheck.AutoSize = True
+        Me.PasswordCheck.Location = New System.Drawing.Point(420, 242)
+        Me.PasswordCheck.Name = "PasswordCheck"
+        Me.PasswordCheck.Size = New System.Drawing.Size(56, 17)
+        Me.PasswordCheck.TabIndex = 44
+        Me.PasswordCheck.Text = "Visible"
+        Me.PasswordCheck.UseVisualStyleBackColor = True
+        '
         'Form_Admin_Karyawan_Edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(709, 450)
+        Me.ClientSize = New System.Drawing.Size(969, 595)
+        Me.Controls.Add(Me.ConfirmCheck)
+        Me.Controls.Add(Me.PasswordCheck)
+        Me.Controls.Add(Me.ConfirmLBL)
+        Me.Controls.Add(Me.ConfirmTB)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.BackBT)
         Me.Controls.Add(Me.JawabanLBL)
         Me.Controls.Add(Me.PasswordLBL)
@@ -296,4 +358,9 @@ Partial Class Form_Admin_Karyawan_Edit
     Friend WithEvents IDLBL As Label
     Friend WithEvents NamaLBL As Label
     Friend WithEvents BackBT As Button
+    Friend WithEvents ConfirmLBL As Label
+    Friend WithEvents ConfirmTB As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents ConfirmCheck As CheckBox
+    Friend WithEvents PasswordCheck As CheckBox
 End Class

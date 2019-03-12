@@ -23,7 +23,7 @@ Partial Class Form_Ubah_Password
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PasswordTB = New System.Windows.Forms.TextBox()
+        Me.ConfirmTB = New System.Windows.Forms.TextBox()
         Me.OkBT = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PasswordLBL = New System.Windows.Forms.Label()
@@ -42,15 +42,15 @@ Partial Class Form_Ubah_Password
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Password"
         '
-        'PasswordTB
+        'ConfirmTB
         '
-        Me.PasswordTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PasswordTB.Location = New System.Drawing.Point(196, 128)
-        Me.PasswordTB.MaxLength = 20
-        Me.PasswordTB.Name = "PasswordTB"
-        Me.PasswordTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.PasswordTB.Size = New System.Drawing.Size(236, 29)
-        Me.PasswordTB.TabIndex = 1
+        Me.ConfirmTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConfirmTB.Location = New System.Drawing.Point(196, 128)
+        Me.ConfirmTB.MaxLength = 20
+        Me.ConfirmTB.Name = "ConfirmTB"
+        Me.ConfirmTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
+        Me.ConfirmTB.Size = New System.Drawing.Size(236, 29)
+        Me.ConfirmTB.TabIndex = 1
         '
         'OkBT
         '
@@ -128,7 +128,7 @@ Partial Class Form_Ubah_Password
         Me.Controls.Add(Me.PasswordLBL)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.OkBT)
-        Me.Controls.Add(Me.PasswordTB)
+        Me.Controls.Add(Me.ConfirmTB)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form_Ubah_Password"
         Me.Text = "Form_Ubah_Password"
@@ -138,7 +138,7 @@ Partial Class Form_Ubah_Password
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents PasswordTB As TextBox
+    Friend WithEvents ConfirmTB As TextBox
     Friend WithEvents OkBT As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents PasswordLBL As Label

@@ -76,7 +76,7 @@ Public Class Form_Admin_Diskon
 
     End Sub
 
-    Private Sub InsertBT_Click(sender As Object, e As EventArgs) Handles InsertBT.Click
+    Private Sub InsertBT_Click(sender As Object, e As EventArgs) Handles SaveBT.Click
 
         Dim result As MsgBoxResult
 
@@ -127,11 +127,11 @@ Public Class Form_Admin_Diskon
 
         If String.IsNullOrWhiteSpace(MinTB.Text) Or String.IsNullOrWhiteSpace(MaxTB.Text) Or String.IsNullOrWhiteSpace(PotonganTB.Text) Or MinLBL.Visible Or MaxLBL.Visible Or PotonganLBL.Visible Then
 
-            InsertBT.Enabled = False
+            SaveBT.Enabled = False
 
         Else
 
-            InsertBT.Enabled = True
+            SaveBT.Enabled = True
 
         End If
 
