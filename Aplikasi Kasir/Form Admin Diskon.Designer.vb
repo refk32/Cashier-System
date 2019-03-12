@@ -31,7 +31,7 @@ Partial Class Form_Admin_Diskon
         Me.Label4 = New System.Windows.Forms.Label()
         Me.InputRadio = New System.Windows.Forms.RadioButton()
         Me.EditRadio = New System.Windows.Forms.RadioButton()
-        Me.InsertBT = New System.Windows.Forms.Button()
+        Me.SaveBT = New System.Windows.Forms.Button()
         Me.DeleteBT = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.BackBT = New System.Windows.Forms.Button()
@@ -43,6 +43,7 @@ Partial Class Form_Admin_Diskon
         Me.MaxLBL = New System.Windows.Forms.Label()
         Me.PotonganLBL = New System.Windows.Forms.Label()
         Me.MaxCheck = New System.Windows.Forms.CheckBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PersenNUD, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,11 +57,11 @@ Partial Class Form_Admin_Diskon
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 58)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(522, 426)
+        Me.DataGridView1.Size = New System.Drawing.Size(522, 498)
         Me.DataGridView1.TabIndex = 0
         '
         'MinTB
@@ -146,15 +147,15 @@ Partial Class Form_Admin_Diskon
         Me.EditRadio.Text = "Edit"
         Me.EditRadio.UseVisualStyleBackColor = True
         '
-        'InsertBT
+        'SaveBT
         '
-        Me.InsertBT.Enabled = False
-        Me.InsertBT.Location = New System.Drawing.Point(587, 380)
-        Me.InsertBT.Name = "InsertBT"
-        Me.InsertBT.Size = New System.Drawing.Size(89, 56)
-        Me.InsertBT.TabIndex = 10
-        Me.InsertBT.Text = "Insert"
-        Me.InsertBT.UseVisualStyleBackColor = True
+        Me.SaveBT.Enabled = False
+        Me.SaveBT.Location = New System.Drawing.Point(587, 380)
+        Me.SaveBT.Name = "SaveBT"
+        Me.SaveBT.Size = New System.Drawing.Size(89, 56)
+        Me.SaveBT.TabIndex = 10
+        Me.SaveBT.Text = "Save"
+        Me.SaveBT.UseVisualStyleBackColor = True
         '
         'DeleteBT
         '
@@ -273,11 +274,22 @@ Partial Class Form_Admin_Diskon
         Me.MaxCheck.Text = "Enable"
         Me.MaxCheck.UseVisualStyleBackColor = True
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(12, 19)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(182, 33)
+        Me.Label6.TabIndex = 22
+        Me.Label6.Text = "Form Diskon"
+        '
         'Form_Admin_Diskon
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1222, 470)
+        Me.ClientSize = New System.Drawing.Size(1181, 568)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.MaxCheck)
         Me.Controls.Add(Me.PotonganLBL)
         Me.Controls.Add(Me.MaxLBL)
@@ -289,7 +301,7 @@ Partial Class Form_Admin_Diskon
         Me.Controls.Add(Me.BackBT)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.DeleteBT)
-        Me.Controls.Add(Me.InsertBT)
+        Me.Controls.Add(Me.SaveBT)
         Me.Controls.Add(Me.EditRadio)
         Me.Controls.Add(Me.InputRadio)
         Me.Controls.Add(Me.Label4)
@@ -300,7 +312,7 @@ Partial Class Form_Admin_Diskon
         Me.Controls.Add(Me.MinTB)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Form_Admin_Diskon"
-        Me.Text = "1233321"
+        Me.Text = "Form Diskon"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PersenNUD, System.ComponentModel.ISupportInitialize).EndInit()
@@ -318,7 +330,7 @@ Partial Class Form_Admin_Diskon
     Friend WithEvents Label4 As Label
     Friend WithEvents InputRadio As RadioButton
     Friend WithEvents EditRadio As RadioButton
-    Friend WithEvents InsertBT As Button
+    Friend WithEvents SaveBT As Button
     Friend WithEvents DeleteBT As Button
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents BackBT As Button
@@ -330,4 +342,5 @@ Partial Class Form_Admin_Diskon
     Friend WithEvents MaxLBL As Label
     Friend WithEvents PotonganLBL As Label
     Friend WithEvents MaxCheck As CheckBox
+    Friend WithEvents Label6 As Label
 End Class

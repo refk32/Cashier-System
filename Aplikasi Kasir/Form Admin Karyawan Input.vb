@@ -47,17 +47,6 @@ Public Class Form_Admin_Karyawan_Input
 
     End Sub
 
-    Private Sub PasswordTB_LostFocus(sender As Object, e As EventArgs) Handles PasswordTB.LostFocus
-
-        If PasswordTB.Text.Contains(" ") Then
-
-            MsgBox("tidak boleh ada spasi")
-            PasswordTB.Clear()
-
-        End If
-
-    End Sub
-
     Private Sub NamaTB_TextChanged(sender As Object, e As EventArgs) Handles NamaTB.TextChanged
 
         If NamaTB.Text.StartsWith(" ") Then
@@ -120,6 +109,7 @@ Public Class Form_Admin_Karyawan_Input
 
         End If
 
+        ControlConfirm()
         ControlSave()
 
     End Sub
@@ -148,7 +138,7 @@ Public Class Form_Admin_Karyawan_Input
 
     Sub ControlSave()
 
-        If NamaLBL.Visible Or IDLBL.Visible Or PasswordLBL.Visible Or JawabanLBL.Visible Or String.IsNullOrWhiteSpace(NamaTB.Text) Or String.IsNullOrWhiteSpace(JenisKelaminCB.Text) Or String.IsNullOrWhiteSpace(JabatanCB.Text) Or String.IsNullOrWhiteSpace(IDTB.Text) Or String.IsNullOrWhiteSpace(PasswordTB.Text) Or String.IsNullOrWhiteSpace(PertanyaanCB.Text) Or String.IsNullOrWhiteSpace(JawabanTB.Text) Then
+        If NamaLBL.Visible Or IDLBL.Visible Or PasswordLBL.Visible Or ConfirmLBL.Visible Or JawabanLBL.Visible Or String.IsNullOrWhiteSpace(NamaTB.Text) Or String.IsNullOrWhiteSpace(JenisKelaminCB.Text) Or String.IsNullOrWhiteSpace(JabatanCB.Text) Or String.IsNullOrWhiteSpace(IDTB.Text) Or String.IsNullOrWhiteSpace(PasswordTB.Text) Or String.IsNullOrWhiteSpace(ConfirmTB.Text) Or String.IsNullOrWhiteSpace(PertanyaanCB.Text) Or String.IsNullOrWhiteSpace(JawabanTB.Text) Then
 
             SaveBT.Enabled = False
 
@@ -201,4 +191,55 @@ Public Class Form_Admin_Karyawan_Input
         ClosingValidate(e, Me)
 
     End Sub
+
+    Private Sub ConfirmTB_TextChanged(sender As Object, e As EventArgs) Handles ConfirmTB.TextChanged
+
+        ControlConfirm()
+        ControlSave()
+
+    End Sub
+
+    Private Sub PasswordCheck_CheckedChanged(sender As Object, e As EventArgs) Handles PasswordCheck.CheckedChanged
+
+        If PasswordCheck.Checked Then
+
+            PasswordTB.PasswordChar = ""
+
+        Else
+
+            PasswordTB.PasswordChar = "●"
+
+        End If
+
+    End Sub
+
+    Private Sub ConfirmCheck_CheckedChanged(sender As Object, e As EventArgs) Handles ConfirmCheck.CheckedChanged
+
+        If ConfirmCheck.Checked Then
+
+            ConfirmTB.PasswordChar = ""
+
+        Else
+
+            ConfirmTB.PasswordChar = "●"
+
+        End If
+
+    End Sub
+
+    Sub ControlConfirm()
+
+        If Not PasswordTB.Text.Equals(ConfirmTB.Text) Then
+
+            ConfirmLBL.Visible = True
+            ConfirmLBL.Text = "Password harus sama"
+
+        Else
+
+            ConfirmLBL.Visible = False
+
+        End If
+
+    End Sub
+
 End Class

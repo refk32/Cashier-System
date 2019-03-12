@@ -37,6 +37,7 @@ Partial Class Form_Admin_Pajak
         Me.Label4 = New System.Windows.Forms.Label()
         Me.NicknameLBL = New System.Windows.Forms.Label()
         Me.NamaLBL = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PersenNUD, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,7 +46,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.NicknameTB.Enabled = False
         Me.NicknameTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NicknameTB.Location = New System.Drawing.Point(568, 131)
+        Me.NicknameTB.Location = New System.Drawing.Point(721, 133)
         Me.NicknameTB.MaxLength = 10
         Me.NicknameTB.Name = "NicknameTB"
         Me.NicknameTB.Size = New System.Drawing.Size(179, 26)
@@ -55,7 +56,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.NamaTB.Enabled = False
         Me.NamaTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NamaTB.Location = New System.Drawing.Point(568, 192)
+        Me.NamaTB.Location = New System.Drawing.Point(721, 194)
         Me.NamaTB.MaxLength = 30
         Me.NamaTB.Name = "NamaTB"
         Me.NamaTB.Size = New System.Drawing.Size(179, 26)
@@ -69,7 +70,7 @@ Partial Class Form_Admin_Pajak
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView1.Location = New System.Drawing.Point(24, 23)
+        Me.DataGridView1.Location = New System.Drawing.Point(195, 25)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(410, 393)
@@ -87,7 +88,7 @@ Partial Class Form_Admin_Pajak
         'DeleteBT
         '
         Me.DeleteBT.Enabled = False
-        Me.DeleteBT.Location = New System.Drawing.Point(773, 354)
+        Me.DeleteBT.Location = New System.Drawing.Point(926, 356)
         Me.DeleteBT.Name = "DeleteBT"
         Me.DeleteBT.Size = New System.Drawing.Size(89, 56)
         Me.DeleteBT.TabIndex = 15
@@ -97,7 +98,7 @@ Partial Class Form_Admin_Pajak
         'InsertBT
         '
         Me.InsertBT.Enabled = False
-        Me.InsertBT.Location = New System.Drawing.Point(481, 354)
+        Me.InsertBT.Location = New System.Drawing.Point(634, 356)
         Me.InsertBT.Name = "InsertBT"
         Me.InsertBT.Size = New System.Drawing.Size(89, 56)
         Me.InsertBT.TabIndex = 14
@@ -108,7 +109,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.EditRadio.AutoSize = True
         Me.EditRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EditRadio.Location = New System.Drawing.Point(481, 62)
+        Me.EditRadio.Location = New System.Drawing.Point(634, 64)
         Me.EditRadio.Name = "EditRadio"
         Me.EditRadio.Size = New System.Drawing.Size(74, 32)
         Me.EditRadio.TabIndex = 13
@@ -120,7 +121,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.InputRadio.AutoSize = True
         Me.InputRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InputRadio.Location = New System.Drawing.Point(481, 23)
+        Me.InputRadio.Location = New System.Drawing.Point(634, 25)
         Me.InputRadio.Name = "InputRadio"
         Me.InputRadio.Size = New System.Drawing.Size(89, 32)
         Me.InputRadio.TabIndex = 12
@@ -132,7 +133,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(467, 133)
+        Me.Label3.Location = New System.Drawing.Point(620, 135)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 24)
         Me.Label3.TabIndex = 18
@@ -142,7 +143,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(495, 194)
+        Me.Label1.Location = New System.Drawing.Point(648, 196)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 24)
         Me.Label1.TabIndex = 19
@@ -152,7 +153,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(495, 253)
+        Me.Label2.Location = New System.Drawing.Point(648, 255)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(70, 24)
         Me.Label2.TabIndex = 20
@@ -162,7 +163,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.PersenNUD.Enabled = False
         Me.PersenNUD.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PersenNUD.Location = New System.Drawing.Point(571, 251)
+        Me.PersenNUD.Location = New System.Drawing.Point(724, 253)
         Me.PersenNUD.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.PersenNUD.Name = "PersenNUD"
         Me.PersenNUD.Size = New System.Drawing.Size(81, 26)
@@ -173,7 +174,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(658, 253)
+        Me.Label4.Location = New System.Drawing.Point(811, 255)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(25, 24)
         Me.Label4.TabIndex = 22
@@ -184,7 +185,7 @@ Partial Class Form_Admin_Pajak
         Me.NicknameLBL.AutoSize = True
         Me.NicknameLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NicknameLBL.ForeColor = System.Drawing.Color.Red
-        Me.NicknameLBL.Location = New System.Drawing.Point(796, 133)
+        Me.NicknameLBL.Location = New System.Drawing.Point(949, 135)
         Me.NicknameLBL.Name = "NicknameLBL"
         Me.NicknameLBL.Size = New System.Drawing.Size(66, 24)
         Me.NicknameLBL.TabIndex = 23
@@ -196,18 +197,29 @@ Partial Class Form_Admin_Pajak
         Me.NamaLBL.AutoSize = True
         Me.NamaLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NamaLBL.ForeColor = System.Drawing.Color.Red
-        Me.NamaLBL.Location = New System.Drawing.Point(796, 194)
+        Me.NamaLBL.Location = New System.Drawing.Point(949, 196)
         Me.NamaLBL.Name = "NamaLBL"
         Me.NamaLBL.Size = New System.Drawing.Size(66, 24)
         Me.NamaLBL.TabIndex = 24
         Me.NamaLBL.Text = "Label6"
         Me.NamaLBL.Visible = False
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(12, 26)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(165, 33)
+        Me.Label5.TabIndex = 25
+        Me.Label5.Text = "Form Pajak"
+        '
         'Form_Admin_Pajak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1145, 450)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.NamaLBL)
         Me.Controls.Add(Me.NicknameLBL)
         Me.Controls.Add(Me.Label4)
@@ -247,4 +259,5 @@ Partial Class Form_Admin_Pajak
     Friend WithEvents Label4 As Label
     Friend WithEvents NicknameLBL As Label
     Friend WithEvents NamaLBL As Label
+    Friend WithEvents Label5 As Label
 End Class

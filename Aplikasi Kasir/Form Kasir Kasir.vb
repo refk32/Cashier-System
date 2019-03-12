@@ -31,6 +31,7 @@ Public Class Form_Kasir_Kasir
 
         KembalianTB.Clear()
 
+        'di parse hanya untuk jaga-jaga tapi sepertinya gak perlu
         Integer.TryParse(QuantityNUD.Value, quantity)
 
         If Not BarangCB.Text = "" Then
