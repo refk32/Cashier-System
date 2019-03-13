@@ -36,7 +36,12 @@ Partial Class Form_Admin_Menu_Input
         Me.HargaLBL = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.BackBT = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.MakananRadio = New System.Windows.Forms.RadioButton()
+        Me.MinumanRadio = New System.Windows.Forms.RadioButton()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'EventLog1
@@ -45,8 +50,9 @@ Partial Class Form_Admin_Menu_Input
         '
         'KodeMakananTB
         '
+        Me.KodeMakananTB.Enabled = False
         Me.KodeMakananTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KodeMakananTB.Location = New System.Drawing.Point(160, 64)
+        Me.KodeMakananTB.Location = New System.Drawing.Point(163, 120)
         Me.KodeMakananTB.MaxLength = 10
         Me.KodeMakananTB.Name = "KodeMakananTB"
         Me.KodeMakananTB.Size = New System.Drawing.Size(156, 26)
@@ -55,7 +61,7 @@ Partial Class Form_Admin_Menu_Input
         'NamaMakananTB
         '
         Me.NamaMakananTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NamaMakananTB.Location = New System.Drawing.Point(160, 124)
+        Me.NamaMakananTB.Location = New System.Drawing.Point(163, 180)
         Me.NamaMakananTB.MaxLength = 25
         Me.NamaMakananTB.Name = "NamaMakananTB"
         Me.NamaMakananTB.Size = New System.Drawing.Size(156, 26)
@@ -64,7 +70,7 @@ Partial Class Form_Admin_Menu_Input
         'HargaTB
         '
         Me.HargaTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HargaTB.Location = New System.Drawing.Point(160, 179)
+        Me.HargaTB.Location = New System.Drawing.Point(163, 235)
         Me.HargaTB.Name = "HargaTB"
         Me.HargaTB.Size = New System.Drawing.Size(156, 26)
         Me.HargaTB.TabIndex = 2
@@ -73,7 +79,7 @@ Partial Class Form_Admin_Menu_Input
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(26, 70)
+        Me.Label1.Location = New System.Drawing.Point(29, 126)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(116, 20)
         Me.Label1.TabIndex = 3
@@ -83,7 +89,7 @@ Partial Class Form_Admin_Menu_Input
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(26, 130)
+        Me.Label2.Location = New System.Drawing.Point(29, 186)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(121, 20)
         Me.Label2.TabIndex = 4
@@ -93,7 +99,7 @@ Partial Class Form_Admin_Menu_Input
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(26, 185)
+        Me.Label3.Location = New System.Drawing.Point(29, 241)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(53, 20)
         Me.Label3.TabIndex = 5
@@ -103,7 +109,7 @@ Partial Class Form_Admin_Menu_Input
         '
         Me.SaveBT.Enabled = False
         Me.SaveBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveBT.Location = New System.Drawing.Point(230, 285)
+        Me.SaveBT.Location = New System.Drawing.Point(233, 341)
         Me.SaveBT.Name = "SaveBT"
         Me.SaveBT.Size = New System.Drawing.Size(86, 43)
         Me.SaveBT.TabIndex = 6
@@ -115,7 +121,7 @@ Partial Class Form_Admin_Menu_Input
         Me.KodeMakananLBL.AutoSize = True
         Me.KodeMakananLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.KodeMakananLBL.ForeColor = System.Drawing.Color.Red
-        Me.KodeMakananLBL.Location = New System.Drawing.Point(332, 64)
+        Me.KodeMakananLBL.Location = New System.Drawing.Point(335, 120)
         Me.KodeMakananLBL.Name = "KodeMakananLBL"
         Me.KodeMakananLBL.Size = New System.Drawing.Size(49, 16)
         Me.KodeMakananLBL.TabIndex = 7
@@ -127,7 +133,7 @@ Partial Class Form_Admin_Menu_Input
         Me.NamaMakananLBL.AutoSize = True
         Me.NamaMakananLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NamaMakananLBL.ForeColor = System.Drawing.Color.Red
-        Me.NamaMakananLBL.Location = New System.Drawing.Point(332, 124)
+        Me.NamaMakananLBL.Location = New System.Drawing.Point(335, 180)
         Me.NamaMakananLBL.Name = "NamaMakananLBL"
         Me.NamaMakananLBL.Size = New System.Drawing.Size(49, 16)
         Me.NamaMakananLBL.TabIndex = 8
@@ -139,7 +145,7 @@ Partial Class Form_Admin_Menu_Input
         Me.HargaLBL.AutoSize = True
         Me.HargaLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HargaLBL.ForeColor = System.Drawing.Color.Red
-        Me.HargaLBL.Location = New System.Drawing.Point(332, 179)
+        Me.HargaLBL.Location = New System.Drawing.Point(335, 235)
         Me.HargaLBL.Name = "HargaLBL"
         Me.HargaLBL.Size = New System.Drawing.Size(49, 16)
         Me.HargaLBL.TabIndex = 9
@@ -155,11 +161,56 @@ Partial Class Form_Admin_Menu_Input
         Me.BackBT.Text = "Back"
         Me.BackBT.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(37, 19)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(61, 20)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "Jenis :"
+        '
+        'MakananRadio
+        '
+        Me.MakananRadio.AutoSize = True
+        Me.MakananRadio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MakananRadio.Location = New System.Drawing.Point(104, 17)
+        Me.MakananRadio.Name = "MakananRadio"
+        Me.MakananRadio.Size = New System.Drawing.Size(93, 24)
+        Me.MakananRadio.TabIndex = 12
+        Me.MakananRadio.Text = "Makanan"
+        Me.MakananRadio.UseVisualStyleBackColor = True
+        '
+        'MinumanRadio
+        '
+        Me.MinumanRadio.AutoSize = True
+        Me.MinumanRadio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MinumanRadio.Location = New System.Drawing.Point(105, 47)
+        Me.MinumanRadio.Name = "MinumanRadio"
+        Me.MinumanRadio.Size = New System.Drawing.Size(92, 24)
+        Me.MinumanRadio.TabIndex = 13
+        Me.MinumanRadio.Text = "Minuman"
+        Me.MinumanRadio.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(456, 186)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(95, 150)
+        Me.DataGridView1.TabIndex = 14
+        '
         'Form_Admin_Menu_Input
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(610, 340)
+        Me.ClientSize = New System.Drawing.Size(610, 502)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.MinumanRadio)
+        Me.Controls.Add(Me.MakananRadio)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BackBT)
         Me.Controls.Add(Me.HargaLBL)
         Me.Controls.Add(Me.NamaMakananLBL)
@@ -174,6 +225,7 @@ Partial Class Form_Admin_Menu_Input
         Me.Name = "Form_Admin_Menu_Input"
         Me.Text = "Form_Admin_Menu_Input"
         CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -192,4 +244,8 @@ Partial Class Form_Admin_Menu_Input
     Friend WithEvents KodeMakananLBL As Label
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents BackBT As Button
+    Friend WithEvents MinumanRadio As RadioButton
+    Friend WithEvents MakananRadio As RadioButton
+    Friend WithEvents Label4 As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
