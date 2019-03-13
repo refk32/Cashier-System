@@ -33,4 +33,9 @@ Public Class Form_Riwayat_Transaksi
 
     End Sub
 
+    Private Sub Form_Riwayat_Transaksi_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+
+        OpenForm(fa)
+
+    End Sub
 End Class

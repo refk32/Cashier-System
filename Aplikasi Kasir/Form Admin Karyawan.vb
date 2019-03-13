@@ -142,7 +142,6 @@ Public Class Form_Admin_Karyawan
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
         Me.Close()
-        OpenForm(fa)
 
     End Sub
 
@@ -152,7 +151,10 @@ Public Class Form_Admin_Karyawan
 
     End Sub
 
-    Private Sub Form_Admin_Karyawan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub Form_Admin_Karyawan_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+
+        OpenForm(fa)
 
     End Sub
 End Class

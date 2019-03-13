@@ -1,6 +1,9 @@
 ﻿Imports System.ComponentModel
 
 Public Class Form_Admin_Diskon
+
+    Public fa As Form_Admin
+
     Private Sub Form_Admin_Diskon_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
 
         RefreshData()
@@ -275,6 +278,7 @@ Public Class Form_Admin_Diskon
 
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
+        OpenForm(fa)
         Me.Close()
 
     End Sub
@@ -282,6 +286,12 @@ Public Class Form_Admin_Diskon
     Private Sub Form_Admin_Diskon_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
 
         ClosingValidate(e, Me)
+
+        If e.Cancel = False Then
+
+            OpenForm(fa)
+
+        End If
 
     End Sub
 

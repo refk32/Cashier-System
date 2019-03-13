@@ -2,6 +2,7 @@
 
 Public Class Form_Admin_Pajak
 
+    Public fa As Form_Admin
     Dim nick As String()
 
     Private Sub Form_Admin_Pajak_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
@@ -20,6 +21,12 @@ Public Class Form_Admin_Pajak
     Private Sub Form_Admin_Pajak_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
 
         ClosingValidate(e, Me)
+
+        If e.Cancel = False Then
+
+            OpenForm(fa)
+
+        End If
 
     End Sub
 

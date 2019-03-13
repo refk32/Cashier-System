@@ -32,12 +32,13 @@ Partial Class Form_Report
         Me.MenuRB = New System.Windows.Forms.RadioButton()
         Me.KaryawanRB = New System.Windows.Forms.RadioButton()
         Me.BackBT = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'IDTRTB
         '
-        Me.IDTRTB.Location = New System.Drawing.Point(199, 268)
+        Me.IDTRTB.Location = New System.Drawing.Point(199, 309)
         Me.IDTRTB.Name = "IDTRTB"
         Me.IDTRTB.Size = New System.Drawing.Size(100, 20)
         Me.IDTRTB.TabIndex = 19
@@ -45,7 +46,7 @@ Partial Class Form_Report
         'IDTRLB
         '
         Me.IDTRLB.FormattingEnabled = True
-        Me.IDTRLB.Location = New System.Drawing.Point(199, 294)
+        Me.IDTRLB.Location = New System.Drawing.Point(199, 335)
         Me.IDTRLB.Name = "IDTRLB"
         Me.IDTRLB.Size = New System.Drawing.Size(100, 56)
         Me.IDTRLB.TabIndex = 18
@@ -53,7 +54,7 @@ Partial Class Form_Report
         'ReportDetailTRBT
         '
         Me.ReportDetailTRBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReportDetailTRBT.Location = New System.Drawing.Point(59, 265)
+        Me.ReportDetailTRBT.Location = New System.Drawing.Point(59, 306)
         Me.ReportDetailTRBT.Name = "ReportDetailTRBT"
         Me.ReportDetailTRBT.Size = New System.Drawing.Size(134, 83)
         Me.ReportDetailTRBT.TabIndex = 16
@@ -67,7 +68,7 @@ Partial Class Form_Report
         Me.GroupBox1.Controls.Add(Me.TransaksiRB)
         Me.GroupBox1.Controls.Add(Me.MenuRB)
         Me.GroupBox1.Controls.Add(Me.KaryawanRB)
-        Me.GroupBox1.Location = New System.Drawing.Point(42, 50)
+        Me.GroupBox1.Location = New System.Drawing.Point(42, 91)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(376, 174)
         Me.GroupBox1.TabIndex = 17
@@ -136,11 +137,22 @@ Partial Class Form_Report
         Me.BackBT.Text = "Back"
         Me.BackBT.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(36, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(179, 33)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Form Report"
+        '
         'Form_Report
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackBT)
         Me.Controls.Add(Me.IDTRTB)
         Me.Controls.Add(Me.IDTRLB)
@@ -165,4 +177,5 @@ Partial Class Form_Report
     Friend WithEvents MenuRB As RadioButton
     Friend WithEvents KaryawanRB As RadioButton
     Friend WithEvents BackBT As Button
+    Friend WithEvents Label1 As Label
 End Class
