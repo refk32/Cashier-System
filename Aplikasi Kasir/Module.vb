@@ -39,7 +39,7 @@ Module Koneksi_Module
 
     End Function
 
-    Public Function DAFillDT(query As String)
+    Public Function DAFillDT(query As String) As DataTable
 
         cmd = SqlCommand_Func(query)
 
@@ -112,11 +112,10 @@ Module Koneksi_Module
 
     End Sub
 
-    Public Function AutoIncrement(tablename As String, pkname As String, _datagridview As DataGridView) As String
+    Public Function AutoIncrement(tablename As String, pkname As String, _datagridview As DataGridView, Optional menu As Boolean = False) As String
 
         Dim id As Integer = 0
         Dim id2 As String
-        Dim query As String
         Dim kodecog As String
 
         Dim dt As DataTable
@@ -126,7 +125,7 @@ Module Koneksi_Module
         If dt.Rows.Count > 0 Then
 
             'mengambil data id paling pertama
-            kodecog = GetFromSqlDataReader("SELECT TOP 1 " + pkname + " FROM " + tablename + "", "string")
+            kodecog = _datagridview.Rows(0).Cells(0).Value
 
             'supaya 0 di awal dibuang semua
             Integer.TryParse(kodecog, id)
@@ -140,8 +139,7 @@ Module Koneksi_Module
             End If
 
             'Ambil kode transaksi yg terakhir pada transaksi
-            query = "SELECT TOP 1 " + pkname + " FROM " + tablename + " ORDER BY " + pkname + " DESC"
-            kodecog = GetFromSqlDataReader(query, "string")
+            kodecog = _datagridview.Rows(_datagridview.Rows.Count - 1).Cells(0).Value
 
             Integer.TryParse(kodecog, id)
 
@@ -157,8 +155,8 @@ Module Koneksi_Module
                 Dim pertama As Integer
                 Dim kedua As Integer
 
-                pertama = _datagridview.Rows(i).Cells(0).Value
-                kedua = _datagridview.Rows(i + 1).Cells(0).Value
+                pertama = _datagridview.Rows(i).Cells(0).Value.ToString()
+                kedua = _datagridview.Rows(i + 1).Cells(0).Value.ToString()
 
                 'cek apakah selisih antar 2 baris bukan lah 1
                 If Not kedua - pertama = 1 Then

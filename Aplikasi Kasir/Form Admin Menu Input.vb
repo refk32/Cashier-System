@@ -5,10 +5,24 @@ Imports System.Text.RegularExpressions
 Public Class Form_Admin_Menu_Input
 
     Dim kode() As String
+    Dim kode_mkn As String
 
     Private Sub Form_Admin_Menu_Input_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         kode = Form_Admin_Menu.a
+
+        DataGridView1.DataSource = DAFillDS("select kode_mkn from table_menu", "table_menu").Tables("table_menu")
+
+        For Each row As DataGridViewRow In DataGridView1.Rows
+
+            row.Cells(0).Value = row.Cells(0).Value.ToString().Remove(0, 1)
+
+        Next
+
+        DataGridView1.Sort(DataGridView1.Columns(0), ListSortDirection.Ascending)
+
+        'harus diinvisible dari sini setelah sort karena kalau dimatiin sebelum disort, jadinya tidak tersort
+        DataGridView1.Visible = False
 
     End Sub
 
@@ -43,33 +57,6 @@ Public Class Form_Admin_Menu_Input
             End Try
 
         End If
-
-    End Sub
-
-    Private Sub KodeMakananTB_TextChanged(sender As Object, e As EventArgs) Handles KodeMakananTB.TextChanged
-
-        If KodeMakananTB.Text.StartsWith(" ") Then
-
-            KodeMakananLBL.Visible = True
-            KodeMakananLBL.Text = DimulaiSpasi()
-
-        ElseIf KodeMakananTB.Text.Contains("  ") Then
-
-            KodeMakananLBL.Visible = True
-            KodeMakananLBL.Text = DoubleSpace()
-
-        ElseIf kode.Contains(KodeMakananTB.Text) Then
-
-            KodeMakananLBL.Visible = True
-            KodeMakananLBL.Text = "Kode makanan sudah dipakai"
-
-        Else
-
-            KodeMakananLBL.Visible = False
-
-        End If
-
-        ControlSave()
 
     End Sub
 
@@ -186,4 +173,37 @@ Public Class Form_Admin_Menu_Input
         ClosingValidate(e, Me)
 
     End Sub
+
+    Private Sub MakananRadio_CheckedChanged(sender As Object, e As EventArgs) Handles MakananRadio.CheckedChanged
+
+        If MakananRadio.Checked Then
+
+            Dim kode As String
+
+            kode = AutoIncrement("table_menu", "kode_mkn", DataGridView1, True)
+
+            kode_mkn = "F" & kode
+
+            KodeMakananTB.Text = kode_mkn
+
+        End If
+
+    End Sub
+
+    Private Sub MinumanRadio_CheckedChanged(sender As Object, e As EventArgs) Handles MinumanRadio.CheckedChanged
+
+        If MinumanRadio.Checked Then
+
+            Dim kode As String
+
+            kode = AutoIncrement("table_menu", "kode_mkn", DataGridView1, True)
+
+            kode_mkn = "D" & kode
+
+            KodeMakananTB.Text = kode_mkn
+
+        End If
+
+    End Sub
+
 End Class
