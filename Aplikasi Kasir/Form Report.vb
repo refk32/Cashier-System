@@ -1,4 +1,6 @@
-﻿Public Class Form_Report
+﻿Imports System.ComponentModel
+
+Public Class Form_Report
 
     Public fa As Form_Admin
 
@@ -121,6 +123,12 @@
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
         Me.Close()
+        OpenForm(fa)
+
+    End Sub
+
+    Private Sub Form_Report_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+
         OpenForm(fa)
 
     End Sub

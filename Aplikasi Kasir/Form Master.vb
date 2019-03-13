@@ -25,7 +25,6 @@ Public Class Form_Master
 
             Else
 
-                '_validate itu ada di module buat validasi close atau gak
                 ClosingWithoutValidate(form)
 
 
@@ -35,6 +34,7 @@ Public Class Form_Master
 
         Form_Admin_Karyawan.fa = fa
         Form_Admin_Karyawan.id = fa.id
+        fa.Hide()
         OpenForm(Form_Admin_Karyawan)
 
     End Sub
@@ -58,6 +58,7 @@ Public Class Form_Master
         Next
 
         Form_Admin_Menu.fa = fa
+        fa.Hide()
         OpenForm(Form_Admin_Menu)
 
     End Sub
@@ -81,6 +82,7 @@ Public Class Form_Master
         Next
 
         Form_Riwayat_Transaksi.fa = fa
+        fa.Hide()
         OpenForm(Form_Riwayat_Transaksi)
 
     End Sub
@@ -104,6 +106,7 @@ Public Class Form_Master
         Next
 
         Form_Report.fa = fa
+        fa.Hide()
         OpenForm(Form_Report)
 
     End Sub
@@ -154,6 +157,8 @@ Public Class Form_Master
 
         Next
 
+        fa.Hide()
+        Form_Admin_Diskon.fa = fa
         OpenForm(Form_Admin_Diskon)
 
     End Sub
@@ -176,6 +181,8 @@ Public Class Form_Master
 
         Next
 
+        Form_Admin_Pajak.fa = fa
+        fa.Hide()
         OpenForm(Form_Admin_Pajak)
 
     End Sub

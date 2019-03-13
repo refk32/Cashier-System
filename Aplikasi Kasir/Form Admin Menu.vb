@@ -108,7 +108,6 @@ Public Class Form_Admin_Menu
 
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
-        OpenForm(fa)
         Me.Close()
 
     End Sub
@@ -137,4 +136,9 @@ Public Class Form_Admin_Menu
 
     End Sub
 
+    Private Sub Form_Admin_Menu_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+
+        OpenForm(fa)
+
+    End Sub
 End Class
