@@ -130,7 +130,7 @@ Partial Class Form_Report
         '
         'BackBT
         '
-        Me.BackBT.Location = New System.Drawing.Point(661, 36)
+        Me.BackBT.Location = New System.Drawing.Point(1497, 12)
         Me.BackBT.Name = "BackBT"
         Me.BackBT.Size = New System.Drawing.Size(95, 56)
         Me.BackBT.TabIndex = 20
@@ -151,7 +151,7 @@ Partial Class Form_Report
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1604, 882)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackBT)
         Me.Controls.Add(Me.IDTRTB)

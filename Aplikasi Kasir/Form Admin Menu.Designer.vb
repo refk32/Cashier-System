@@ -22,6 +22,7 @@ Partial Class Form_Admin_Menu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.InputBT = New System.Windows.Forms.Button()
@@ -37,58 +38,68 @@ Partial Class Form_Admin_Menu
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter
         Me.DataGridView1.Location = New System.Drawing.Point(55, 102)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(707, 223)
+        Me.DataGridView1.RowTemplate.Height = 50
+        Me.DataGridView1.Size = New System.Drawing.Size(1503, 569)
         Me.DataGridView1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(55, 59)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(48, 37)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(139, 24)
+        Me.Label1.Size = New System.Drawing.Size(263, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Daftar Makanan"
         '
         'InputBT
         '
-        Me.InputBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InputBT.Location = New System.Drawing.Point(55, 347)
+        Me.InputBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InputBT.Location = New System.Drawing.Point(55, 734)
         Me.InputBT.Name = "InputBT"
-        Me.InputBT.Size = New System.Drawing.Size(85, 37)
+        Me.InputBT.Size = New System.Drawing.Size(139, 98)
         Me.InputBT.TabIndex = 2
         Me.InputBT.Text = "Input"
         Me.InputBT.UseVisualStyleBackColor = True
         '
         'EditBT
         '
-        Me.EditBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EditBT.Location = New System.Drawing.Point(184, 347)
+        Me.EditBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditBT.Location = New System.Drawing.Point(230, 734)
         Me.EditBT.Name = "EditBT"
-        Me.EditBT.Size = New System.Drawing.Size(85, 37)
+        Me.EditBT.Size = New System.Drawing.Size(139, 98)
         Me.EditBT.TabIndex = 3
         Me.EditBT.Text = "Edit"
         Me.EditBT.UseVisualStyleBackColor = True
         '
         'DeleteBT
         '
-        Me.DeleteBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DeleteBT.Location = New System.Drawing.Point(307, 347)
+        Me.DeleteBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteBT.Location = New System.Drawing.Point(406, 734)
         Me.DeleteBT.Name = "DeleteBT"
-        Me.DeleteBT.Size = New System.Drawing.Size(85, 37)
+        Me.DeleteBT.Size = New System.Drawing.Size(159, 98)
         Me.DeleteBT.TabIndex = 4
         Me.DeleteBT.Text = "Delete"
         Me.DeleteBT.UseVisualStyleBackColor = True
         '
         'BackBT
         '
-        Me.BackBT.Location = New System.Drawing.Point(660, 390)
+        Me.BackBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBT.Location = New System.Drawing.Point(1413, 746)
         Me.BackBT.Name = "BackBT"
-        Me.BackBT.Size = New System.Drawing.Size(102, 48)
+        Me.BackBT.Size = New System.Drawing.Size(145, 77)
         Me.BackBT.TabIndex = 5
         Me.BackBT.Text = "Back"
         Me.BackBT.UseVisualStyleBackColor = True
@@ -98,7 +109,7 @@ Partial Class Form_Admin_Menu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1604, 882)
         Me.Controls.Add(Me.BackBT)
         Me.Controls.Add(Me.DeleteBT)
         Me.Controls.Add(Me.EditBT)
