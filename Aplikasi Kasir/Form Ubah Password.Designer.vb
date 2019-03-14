@@ -35,30 +35,30 @@ Partial Class Form_Ubah_Password
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(98, 133)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(494, 314)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 24)
+        Me.Label1.Size = New System.Drawing.Size(143, 33)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Password"
         '
         'ConfirmTB
         '
-        Me.ConfirmTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ConfirmTB.Location = New System.Drawing.Point(196, 128)
+        Me.ConfirmTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConfirmTB.Location = New System.Drawing.Point(643, 311)
         Me.ConfirmTB.MaxLength = 20
         Me.ConfirmTB.Name = "ConfirmTB"
         Me.ConfirmTB.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.ConfirmTB.Size = New System.Drawing.Size(236, 29)
+        Me.ConfirmTB.Size = New System.Drawing.Size(319, 40)
         Me.ConfirmTB.TabIndex = 1
         '
         'OkBT
         '
         Me.OkBT.Enabled = False
-        Me.OkBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OkBT.Location = New System.Drawing.Point(283, 246)
+        Me.OkBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OkBT.Location = New System.Drawing.Point(734, 498)
         Me.OkBT.Name = "OkBT"
-        Me.OkBT.Size = New System.Drawing.Size(107, 40)
+        Me.OkBT.Size = New System.Drawing.Size(137, 78)
         Me.OkBT.TabIndex = 3
         Me.OkBT.Text = "Ok"
         Me.OkBT.UseVisualStyleBackColor = True
@@ -66,53 +66,53 @@ Partial Class Form_Ubah_Password
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(113, 35)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(672, 46)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(206, 31)
+        Me.Label2.Size = New System.Drawing.Size(261, 39)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Ubah Password"
         '
         'PasswordLBL
         '
         Me.PasswordLBL.AutoSize = True
-        Me.PasswordLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordLBL.ForeColor = System.Drawing.Color.Red
-        Me.PasswordLBL.Location = New System.Drawing.Point(438, 137)
+        Me.PasswordLBL.Location = New System.Drawing.Point(968, 314)
         Me.PasswordLBL.Name = "PasswordLBL"
-        Me.PasswordLBL.Size = New System.Drawing.Size(66, 20)
+        Me.PasswordLBL.Size = New System.Drawing.Size(118, 33)
         Me.PasswordLBL.TabIndex = 19
         Me.PasswordLBL.Text = "Label10"
         Me.PasswordLBL.Visible = False
         '
         'PasswordTB2
         '
-        Me.PasswordTB2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PasswordTB2.Location = New System.Drawing.Point(196, 181)
+        Me.PasswordTB2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordTB2.Location = New System.Drawing.Point(643, 413)
         Me.PasswordTB2.MaxLength = 20
         Me.PasswordTB2.Name = "PasswordTB2"
         Me.PasswordTB2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.PasswordTB2.Size = New System.Drawing.Size(236, 29)
+        Me.PasswordTB2.Size = New System.Drawing.Size(319, 40)
         Me.PasswordTB2.TabIndex = 2
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 181)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(357, 416)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(178, 24)
+        Me.Label3.Size = New System.Drawing.Size(280, 33)
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "Konfimasi Password"
         '
         'PasswordLBL2
         '
         Me.PasswordLBL2.AutoSize = True
-        Me.PasswordLBL2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordLBL2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordLBL2.ForeColor = System.Drawing.Color.Red
-        Me.PasswordLBL2.Location = New System.Drawing.Point(438, 190)
+        Me.PasswordLBL2.Location = New System.Drawing.Point(968, 420)
         Me.PasswordLBL2.Name = "PasswordLBL2"
-        Me.PasswordLBL2.Size = New System.Drawing.Size(66, 20)
+        Me.PasswordLBL2.Size = New System.Drawing.Size(118, 33)
         Me.PasswordLBL2.TabIndex = 22
         Me.PasswordLBL2.Text = "Label10"
         Me.PasswordLBL2.Visible = False
@@ -121,7 +121,7 @@ Partial Class Form_Ubah_Password
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(645, 332)
+        Me.ClientSize = New System.Drawing.Size(1604, 882)
         Me.Controls.Add(Me.PasswordLBL2)
         Me.Controls.Add(Me.PasswordTB2)
         Me.Controls.Add(Me.Label3)

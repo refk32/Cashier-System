@@ -10,12 +10,6 @@ Public Class Form_Riwayat_Transaksi
 
         UpdateData()
 
-        If DataGridView1.Rows.Count > 0 Then
-
-            DataGridView1.Columns(0).Width = 50
-
-        End If
-
     End Sub
 
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click

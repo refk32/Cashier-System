@@ -38,25 +38,28 @@ Partial Class Form_Report
         '
         'IDTRTB
         '
-        Me.IDTRTB.Location = New System.Drawing.Point(199, 309)
+        Me.IDTRTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IDTRTB.Location = New System.Drawing.Point(252, 428)
         Me.IDTRTB.Name = "IDTRTB"
-        Me.IDTRTB.Size = New System.Drawing.Size(100, 20)
+        Me.IDTRTB.Size = New System.Drawing.Size(228, 40)
         Me.IDTRTB.TabIndex = 19
         '
         'IDTRLB
         '
+        Me.IDTRLB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IDTRLB.FormattingEnabled = True
-        Me.IDTRLB.Location = New System.Drawing.Point(199, 335)
+        Me.IDTRLB.ItemHeight = 33
+        Me.IDTRLB.Location = New System.Drawing.Point(252, 483)
         Me.IDTRLB.Name = "IDTRLB"
-        Me.IDTRLB.Size = New System.Drawing.Size(100, 56)
+        Me.IDTRLB.Size = New System.Drawing.Size(228, 103)
         Me.IDTRLB.TabIndex = 18
         '
         'ReportDetailTRBT
         '
-        Me.ReportDetailTRBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReportDetailTRBT.Location = New System.Drawing.Point(59, 306)
+        Me.ReportDetailTRBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReportDetailTRBT.Location = New System.Drawing.Point(31, 428)
         Me.ReportDetailTRBT.Name = "ReportDetailTRBT"
-        Me.ReportDetailTRBT.Size = New System.Drawing.Size(134, 83)
+        Me.ReportDetailTRBT.Size = New System.Drawing.Size(215, 158)
         Me.ReportDetailTRBT.TabIndex = 16
         Me.ReportDetailTRBT.Text = "Report Detail Transaksi"
         Me.ReportDetailTRBT.UseVisualStyleBackColor = True
@@ -68,9 +71,10 @@ Partial Class Form_Report
         Me.GroupBox1.Controls.Add(Me.TransaksiRB)
         Me.GroupBox1.Controls.Add(Me.MenuRB)
         Me.GroupBox1.Controls.Add(Me.KaryawanRB)
-        Me.GroupBox1.Location = New System.Drawing.Point(42, 91)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 91)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(376, 174)
+        Me.GroupBox1.Size = New System.Drawing.Size(802, 521)
         Me.GroupBox1.TabIndex = 17
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Report"
@@ -80,17 +84,17 @@ Partial Class Form_Report
         Me.KaryawanCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.KaryawanCB.Enabled = False
         Me.KaryawanCB.FormattingEnabled = True
-        Me.KaryawanCB.Location = New System.Drawing.Point(243, 108)
+        Me.KaryawanCB.Location = New System.Drawing.Point(446, 159)
         Me.KaryawanCB.Name = "KaryawanCB"
-        Me.KaryawanCB.Size = New System.Drawing.Size(121, 21)
+        Me.KaryawanCB.Size = New System.Drawing.Size(266, 41)
         Me.KaryawanCB.TabIndex = 8
         '
         'ReportBT
         '
-        Me.ReportBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReportBT.Location = New System.Drawing.Point(17, 46)
+        Me.ReportBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReportBT.Location = New System.Drawing.Point(19, 39)
         Me.ReportBT.Name = "ReportBT"
-        Me.ReportBT.Size = New System.Drawing.Size(134, 83)
+        Me.ReportBT.Size = New System.Drawing.Size(204, 158)
         Me.ReportBT.TabIndex = 4
         Me.ReportBT.Text = "Report"
         Me.ReportBT.UseVisualStyleBackColor = True
@@ -98,9 +102,9 @@ Partial Class Form_Report
         'TransaksiRB
         '
         Me.TransaksiRB.AutoSize = True
-        Me.TransaksiRB.Location = New System.Drawing.Point(166, 112)
+        Me.TransaksiRB.Location = New System.Drawing.Point(279, 159)
         Me.TransaksiRB.Name = "TransaksiRB"
-        Me.TransaksiRB.Size = New System.Drawing.Size(71, 17)
+        Me.TransaksiRB.Size = New System.Drawing.Size(161, 37)
         Me.TransaksiRB.TabIndex = 7
         Me.TransaksiRB.TabStop = True
         Me.TransaksiRB.Text = "Transaksi"
@@ -109,9 +113,9 @@ Partial Class Form_Report
         'MenuRB
         '
         Me.MenuRB.AutoSize = True
-        Me.MenuRB.Location = New System.Drawing.Point(166, 80)
+        Me.MenuRB.Location = New System.Drawing.Point(279, 98)
         Me.MenuRB.Name = "MenuRB"
-        Me.MenuRB.Size = New System.Drawing.Size(100, 17)
+        Me.MenuRB.Size = New System.Drawing.Size(232, 37)
         Me.MenuRB.TabIndex = 6
         Me.MenuRB.TabStop = True
         Me.MenuRB.Text = "Menu Makanan"
@@ -120,9 +124,9 @@ Partial Class Form_Report
         'KaryawanRB
         '
         Me.KaryawanRB.AutoSize = True
-        Me.KaryawanRB.Location = New System.Drawing.Point(166, 46)
+        Me.KaryawanRB.Location = New System.Drawing.Point(279, 37)
         Me.KaryawanRB.Name = "KaryawanRB"
-        Me.KaryawanRB.Size = New System.Drawing.Size(72, 17)
+        Me.KaryawanRB.Size = New System.Drawing.Size(162, 37)
         Me.KaryawanRB.TabIndex = 5
         Me.KaryawanRB.TabStop = True
         Me.KaryawanRB.Text = "Karyawan"
@@ -140,10 +144,10 @@ Partial Class Form_Report
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(36, 27)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(24, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(179, 33)
+        Me.Label1.Size = New System.Drawing.Size(212, 39)
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "Form Report"
         '

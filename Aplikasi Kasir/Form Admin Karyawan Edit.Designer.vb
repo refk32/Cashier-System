@@ -47,6 +47,7 @@ Partial Class Form_Admin_Karyawan_Edit
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BackBT
@@ -314,11 +315,22 @@ Partial Class Form_Admin_Karyawan_Edit
         Me.Label1.TabIndex = 41
         Me.Label1.Text = "Nama"
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(1060, 45)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(349, 39)
+        Me.Label8.TabIndex = 65
+        Me.Label8.Text = "Form Karyawan Edit"
+        '
         'Form_Admin_Karyawan_Edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1604, 882)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ConfirmCheck)
         Me.Controls.Add(Me.PasswordCheck)
         Me.Controls.Add(Me.ConfirmLBL)
@@ -375,4 +387,5 @@ Partial Class Form_Admin_Karyawan_Edit
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label8 As Label
 End Class

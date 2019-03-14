@@ -284,8 +284,8 @@ Public Class Form_Admin_Diskon
 
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
-        OpenForm(fa)
         Me.Close()
+        OpenForm(fa)
 
     End Sub
 
