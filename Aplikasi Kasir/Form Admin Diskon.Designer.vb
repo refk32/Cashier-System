@@ -61,75 +61,75 @@ Partial Class Form_Admin_Diskon
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(522, 498)
+        Me.DataGridView1.Size = New System.Drawing.Size(522, 789)
         Me.DataGridView1.TabIndex = 0
         '
         'MinTB
         '
         Me.MinTB.Enabled = False
-        Me.MinTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MinTB.Location = New System.Drawing.Point(764, 217)
+        Me.MinTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MinTB.Location = New System.Drawing.Point(811, 320)
         Me.MinTB.Name = "MinTB"
-        Me.MinTB.Size = New System.Drawing.Size(148, 31)
+        Me.MinTB.Size = New System.Drawing.Size(148, 40)
         Me.MinTB.TabIndex = 2
         '
         'MaxTB
         '
         Me.MaxTB.Enabled = False
-        Me.MaxTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaxTB.Location = New System.Drawing.Point(764, 267)
+        Me.MaxTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaxTB.Location = New System.Drawing.Point(811, 414)
         Me.MaxTB.Name = "MaxTB"
-        Me.MaxTB.Size = New System.Drawing.Size(148, 31)
+        Me.MaxTB.Size = New System.Drawing.Size(148, 40)
         Me.MaxTB.TabIndex = 3
         Me.MaxTB.Text = "0"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(582, 173)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(581, 233)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 25)
+        Me.Label1.Size = New System.Drawing.Size(107, 33)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Persen"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(582, 220)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(581, 327)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(160, 25)
+        Me.Label2.Size = New System.Drawing.Size(216, 33)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Min. Pembelian"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(582, 270)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(581, 421)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(166, 25)
+        Me.Label3.Size = New System.Drawing.Size(224, 33)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Max. Pembelian"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(838, 175)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(885, 233)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(32, 25)
+        Me.Label4.Size = New System.Drawing.Size(41, 33)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "%"
         '
         'InputRadio
         '
         Me.InputRadio.AutoSize = True
-        Me.InputRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InputRadio.Location = New System.Drawing.Point(588, 19)
+        Me.InputRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InputRadio.Location = New System.Drawing.Point(587, 58)
         Me.InputRadio.Name = "InputRadio"
-        Me.InputRadio.Size = New System.Drawing.Size(89, 32)
+        Me.InputRadio.Size = New System.Drawing.Size(123, 45)
         Me.InputRadio.TabIndex = 8
         Me.InputRadio.TabStop = True
         Me.InputRadio.Text = "Input"
@@ -138,10 +138,10 @@ Partial Class Form_Admin_Diskon
         'EditRadio
         '
         Me.EditRadio.AutoSize = True
-        Me.EditRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EditRadio.Location = New System.Drawing.Point(588, 58)
+        Me.EditRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditRadio.Location = New System.Drawing.Point(587, 109)
         Me.EditRadio.Name = "EditRadio"
-        Me.EditRadio.Size = New System.Drawing.Size(74, 32)
+        Me.EditRadio.Size = New System.Drawing.Size(97, 45)
         Me.EditRadio.TabIndex = 9
         Me.EditRadio.TabStop = True
         Me.EditRadio.Text = "Edit"
@@ -150,18 +150,20 @@ Partial Class Form_Admin_Diskon
         'SaveBT
         '
         Me.SaveBT.Enabled = False
-        Me.SaveBT.Location = New System.Drawing.Point(587, 380)
+        Me.SaveBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveBT.Location = New System.Drawing.Point(605, 748)
         Me.SaveBT.Name = "SaveBT"
-        Me.SaveBT.Size = New System.Drawing.Size(89, 56)
+        Me.SaveBT.Size = New System.Drawing.Size(139, 99)
         Me.SaveBT.TabIndex = 10
         Me.SaveBT.Text = "Save"
         Me.SaveBT.UseVisualStyleBackColor = True
         '
         'DeleteBT
         '
-        Me.DeleteBT.Location = New System.Drawing.Point(823, 380)
+        Me.DeleteBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteBT.Location = New System.Drawing.Point(811, 748)
         Me.DeleteBT.Name = "DeleteBT"
-        Me.DeleteBT.Size = New System.Drawing.Size(89, 56)
+        Me.DeleteBT.Size = New System.Drawing.Size(139, 99)
         Me.DeleteBT.TabIndex = 11
         Me.DeleteBT.Text = "Delete"
         Me.DeleteBT.UseVisualStyleBackColor = True
@@ -177,9 +179,10 @@ Partial Class Form_Admin_Diskon
         '
         'BackBT
         '
-        Me.BackBT.Location = New System.Drawing.Point(1074, 12)
+        Me.BackBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBT.Location = New System.Drawing.Point(1438, 30)
         Me.BackBT.Name = "BackBT"
-        Me.BackBT.Size = New System.Drawing.Size(89, 56)
+        Me.BackBT.Size = New System.Drawing.Size(132, 82)
         Me.BackBT.TabIndex = 13
         Me.BackBT.Text = "Back"
         Me.BackBT.UseVisualStyleBackColor = True
@@ -187,10 +190,10 @@ Partial Class Form_Admin_Diskon
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(582, 316)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(581, 515)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(157, 25)
+        Me.Label5.Size = New System.Drawing.Size(209, 33)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Max. Potongan"
         '
@@ -199,7 +202,7 @@ Partial Class Form_Admin_Diskon
         Me.PotonganCheck.AutoSize = True
         Me.PotonganCheck.Enabled = False
         Me.PotonganCheck.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PotonganCheck.Location = New System.Drawing.Point(918, 315)
+        Me.PotonganCheck.Location = New System.Drawing.Point(965, 521)
         Me.PotonganCheck.Name = "PotonganCheck"
         Me.PotonganCheck.Size = New System.Drawing.Size(78, 24)
         Me.PotonganCheck.TabIndex = 15
@@ -209,20 +212,20 @@ Partial Class Form_Admin_Diskon
         'PotonganTB
         '
         Me.PotonganTB.Enabled = False
-        Me.PotonganTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PotonganTB.Location = New System.Drawing.Point(764, 313)
+        Me.PotonganTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PotonganTB.Location = New System.Drawing.Point(811, 508)
         Me.PotonganTB.Name = "PotonganTB"
-        Me.PotonganTB.Size = New System.Drawing.Size(148, 31)
+        Me.PotonganTB.Size = New System.Drawing.Size(148, 40)
         Me.PotonganTB.TabIndex = 16
         Me.PotonganTB.Text = "0"
         '
         'PersenNUD
         '
-        Me.PersenNUD.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PersenNUD.Location = New System.Drawing.Point(764, 173)
+        Me.PersenNUD.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PersenNUD.Location = New System.Drawing.Point(811, 226)
         Me.PersenNUD.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.PersenNUD.Name = "PersenNUD"
-        Me.PersenNUD.Size = New System.Drawing.Size(68, 31)
+        Me.PersenNUD.Size = New System.Drawing.Size(68, 40)
         Me.PersenNUD.TabIndex = 17
         Me.PersenNUD.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -231,7 +234,7 @@ Partial Class Form_Admin_Diskon
         Me.MinLBL.AutoSize = True
         Me.MinLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MinLBL.ForeColor = System.Drawing.Color.Red
-        Me.MinLBL.Location = New System.Drawing.Point(1047, 213)
+        Me.MinLBL.Location = New System.Drawing.Point(965, 327)
         Me.MinLBL.Name = "MinLBL"
         Me.MinLBL.Size = New System.Drawing.Size(66, 24)
         Me.MinLBL.TabIndex = 18
@@ -243,7 +246,7 @@ Partial Class Form_Admin_Diskon
         Me.MaxLBL.AutoSize = True
         Me.MaxLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MaxLBL.ForeColor = System.Drawing.Color.Red
-        Me.MaxLBL.Location = New System.Drawing.Point(1047, 266)
+        Me.MaxLBL.Location = New System.Drawing.Point(1049, 421)
         Me.MaxLBL.Name = "MaxLBL"
         Me.MaxLBL.Size = New System.Drawing.Size(66, 24)
         Me.MaxLBL.TabIndex = 19
@@ -255,7 +258,7 @@ Partial Class Form_Admin_Diskon
         Me.PotonganLBL.AutoSize = True
         Me.PotonganLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PotonganLBL.ForeColor = System.Drawing.Color.Red
-        Me.PotonganLBL.Location = New System.Drawing.Point(1047, 313)
+        Me.PotonganLBL.Location = New System.Drawing.Point(1049, 521)
         Me.PotonganLBL.Name = "PotonganLBL"
         Me.PotonganLBL.Size = New System.Drawing.Size(66, 24)
         Me.PotonganLBL.TabIndex = 20
@@ -267,7 +270,7 @@ Partial Class Form_Admin_Diskon
         Me.MaxCheck.AutoSize = True
         Me.MaxCheck.Enabled = False
         Me.MaxCheck.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaxCheck.Location = New System.Drawing.Point(918, 276)
+        Me.MaxCheck.Location = New System.Drawing.Point(965, 421)
         Me.MaxCheck.Name = "MaxCheck"
         Me.MaxCheck.Size = New System.Drawing.Size(78, 24)
         Me.MaxCheck.TabIndex = 21
@@ -288,7 +291,7 @@ Partial Class Form_Admin_Diskon
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1181, 568)
+        Me.ClientSize = New System.Drawing.Size(1604, 882)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.MaxCheck)
         Me.Controls.Add(Me.PotonganLBL)

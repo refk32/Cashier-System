@@ -201,6 +201,12 @@ Public Class Form_Admin_Diskon
 
             MaxLBL.Visible = True
             MaxLBL.Text = "Maks. pembelian tidak bisa 0 bila dienable"
+
+            'harus manual mematikan minlbl dari sini
+        ElseIf String.IsNullOrWhiteSpace(MaxTB.Text) And MaxCheck.Checked Then
+
+            MinLBL.Visible = False
+
         Else
 
             MaxLBL.Visible = False
@@ -370,11 +376,8 @@ Public Class Form_Admin_Diskon
 
             ControlSave()
 
-        Else
-
-            MinLBL.Visible = False
-
         End If
+
 
     End Sub
 

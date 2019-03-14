@@ -51,9 +51,10 @@ Partial Class Form_Admin_Karyawan_Edit
         '
         'BackBT
         '
-        Me.BackBT.Location = New System.Drawing.Point(1474, 25)
+        Me.BackBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBT.Location = New System.Drawing.Point(1444, 25)
         Me.BackBT.Name = "BackBT"
-        Me.BackBT.Size = New System.Drawing.Size(102, 56)
+        Me.BackBT.Size = New System.Drawing.Size(132, 80)
         Me.BackBT.TabIndex = 40
         Me.BackBT.Text = "Back"
         Me.BackBT.UseVisualStyleBackColor = True

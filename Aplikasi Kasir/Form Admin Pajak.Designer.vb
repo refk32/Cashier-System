@@ -22,6 +22,7 @@ Partial Class Form_Admin_Pajak
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.NicknameTB = New System.Windows.Forms.TextBox()
         Me.NamaTB = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -45,21 +46,21 @@ Partial Class Form_Admin_Pajak
         'NicknameTB
         '
         Me.NicknameTB.Enabled = False
-        Me.NicknameTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NicknameTB.Location = New System.Drawing.Point(721, 133)
+        Me.NicknameTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NicknameTB.Location = New System.Drawing.Point(772, 227)
         Me.NicknameTB.MaxLength = 10
         Me.NicknameTB.Name = "NicknameTB"
-        Me.NicknameTB.Size = New System.Drawing.Size(179, 26)
+        Me.NicknameTB.Size = New System.Drawing.Size(288, 40)
         Me.NicknameTB.TabIndex = 0
         '
         'NamaTB
         '
         Me.NamaTB.Enabled = False
-        Me.NamaTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NamaTB.Location = New System.Drawing.Point(721, 194)
+        Me.NamaTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NamaTB.Location = New System.Drawing.Point(772, 336)
         Me.NamaTB.MaxLength = 30
         Me.NamaTB.Name = "NamaTB"
-        Me.NamaTB.Size = New System.Drawing.Size(179, 26)
+        Me.NamaTB.Size = New System.Drawing.Size(288, 40)
         Me.NamaTB.TabIndex = 1
         '
         'DataGridView1
@@ -70,17 +71,27 @@ Partial Class Form_Admin_Pajak
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView1.Location = New System.Drawing.Point(195, 25)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridView1.Location = New System.Drawing.Point(18, 80)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(410, 393)
+        Me.DataGridView1.RowTemplate.Height = 50
+        Me.DataGridView1.Size = New System.Drawing.Size(549, 764)
         Me.DataGridView1.TabIndex = 3
         '
         'BackBT
         '
-        Me.BackBT.Location = New System.Drawing.Point(1014, 23)
+        Me.BackBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBT.Location = New System.Drawing.Point(1443, 26)
         Me.BackBT.Name = "BackBT"
-        Me.BackBT.Size = New System.Drawing.Size(101, 50)
+        Me.BackBT.Size = New System.Drawing.Size(135, 89)
         Me.BackBT.TabIndex = 4
         Me.BackBT.Text = "Back"
         Me.BackBT.UseVisualStyleBackColor = True
@@ -88,9 +99,10 @@ Partial Class Form_Admin_Pajak
         'DeleteBT
         '
         Me.DeleteBT.Enabled = False
-        Me.DeleteBT.Location = New System.Drawing.Point(926, 356)
+        Me.DeleteBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteBT.Location = New System.Drawing.Point(810, 767)
         Me.DeleteBT.Name = "DeleteBT"
-        Me.DeleteBT.Size = New System.Drawing.Size(89, 56)
+        Me.DeleteBT.Size = New System.Drawing.Size(118, 77)
         Me.DeleteBT.TabIndex = 15
         Me.DeleteBT.Text = "Delete"
         Me.DeleteBT.UseVisualStyleBackColor = True
@@ -98,20 +110,21 @@ Partial Class Form_Admin_Pajak
         'InsertBT
         '
         Me.InsertBT.Enabled = False
-        Me.InsertBT.Location = New System.Drawing.Point(634, 356)
+        Me.InsertBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InsertBT.Location = New System.Drawing.Point(601, 767)
         Me.InsertBT.Name = "InsertBT"
-        Me.InsertBT.Size = New System.Drawing.Size(89, 56)
+        Me.InsertBT.Size = New System.Drawing.Size(114, 77)
         Me.InsertBT.TabIndex = 14
-        Me.InsertBT.Text = "Insert"
+        Me.InsertBT.Text = "Save"
         Me.InsertBT.UseVisualStyleBackColor = True
         '
         'EditRadio
         '
         Me.EditRadio.AutoSize = True
-        Me.EditRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EditRadio.Location = New System.Drawing.Point(634, 64)
+        Me.EditRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 25.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditRadio.Location = New System.Drawing.Point(601, 149)
         Me.EditRadio.Name = "EditRadio"
-        Me.EditRadio.Size = New System.Drawing.Size(74, 32)
+        Me.EditRadio.Size = New System.Drawing.Size(103, 47)
         Me.EditRadio.TabIndex = 13
         Me.EditRadio.TabStop = True
         Me.EditRadio.Text = "Edit"
@@ -120,10 +133,10 @@ Partial Class Form_Admin_Pajak
         'InputRadio
         '
         Me.InputRadio.AutoSize = True
-        Me.InputRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InputRadio.Location = New System.Drawing.Point(634, 25)
+        Me.InputRadio.Font = New System.Drawing.Font("Microsoft YaHei UI", 25.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InputRadio.Location = New System.Drawing.Point(601, 80)
         Me.InputRadio.Name = "InputRadio"
-        Me.InputRadio.Size = New System.Drawing.Size(89, 32)
+        Me.InputRadio.Size = New System.Drawing.Size(129, 47)
         Me.InputRadio.TabIndex = 12
         Me.InputRadio.TabStop = True
         Me.InputRadio.Text = "Input"
@@ -132,62 +145,62 @@ Partial Class Form_Admin_Pajak
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(620, 135)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(595, 234)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(95, 24)
+        Me.Label3.Size = New System.Drawing.Size(146, 33)
         Me.Label3.TabIndex = 18
         Me.Label3.Text = "Nickname"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(648, 196)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(648, 343)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 24)
+        Me.Label1.Size = New System.Drawing.Size(93, 33)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Nama"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(648, 255)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(634, 455)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 24)
+        Me.Label2.Size = New System.Drawing.Size(107, 33)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Persen"
         '
         'PersenNUD
         '
         Me.PersenNUD.Enabled = False
-        Me.PersenNUD.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PersenNUD.Location = New System.Drawing.Point(724, 253)
+        Me.PersenNUD.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PersenNUD.Location = New System.Drawing.Point(772, 448)
         Me.PersenNUD.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.PersenNUD.Name = "PersenNUD"
-        Me.PersenNUD.Size = New System.Drawing.Size(81, 26)
+        Me.PersenNUD.Size = New System.Drawing.Size(87, 40)
         Me.PersenNUD.TabIndex = 21
         Me.PersenNUD.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(811, 255)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(865, 450)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(25, 24)
+        Me.Label4.Size = New System.Drawing.Size(41, 33)
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "%"
         '
         'NicknameLBL
         '
         Me.NicknameLBL.AutoSize = True
-        Me.NicknameLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NicknameLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NicknameLBL.ForeColor = System.Drawing.Color.Red
-        Me.NicknameLBL.Location = New System.Drawing.Point(949, 135)
+        Me.NicknameLBL.Location = New System.Drawing.Point(1066, 234)
         Me.NicknameLBL.Name = "NicknameLBL"
-        Me.NicknameLBL.Size = New System.Drawing.Size(66, 24)
+        Me.NicknameLBL.Size = New System.Drawing.Size(102, 33)
         Me.NicknameLBL.TabIndex = 23
         Me.NicknameLBL.Text = "Label5"
         Me.NicknameLBL.Visible = False
@@ -195,11 +208,11 @@ Partial Class Form_Admin_Pajak
         'NamaLBL
         '
         Me.NamaLBL.AutoSize = True
-        Me.NamaLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NamaLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NamaLBL.ForeColor = System.Drawing.Color.Red
-        Me.NamaLBL.Location = New System.Drawing.Point(949, 196)
+        Me.NamaLBL.Location = New System.Drawing.Point(1066, 339)
         Me.NamaLBL.Name = "NamaLBL"
-        Me.NamaLBL.Size = New System.Drawing.Size(66, 24)
+        Me.NamaLBL.Size = New System.Drawing.Size(102, 33)
         Me.NamaLBL.TabIndex = 24
         Me.NamaLBL.Text = "Label6"
         Me.NamaLBL.Visible = False
@@ -218,7 +231,7 @@ Partial Class Form_Admin_Pajak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1145, 450)
+        Me.ClientSize = New System.Drawing.Size(1604, 882)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.NamaLBL)
         Me.Controls.Add(Me.NicknameLBL)
