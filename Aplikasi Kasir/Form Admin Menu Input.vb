@@ -172,6 +172,12 @@ Public Class Form_Admin_Menu_Input
 
         ClosingValidate(e, Me)
 
+        If e.Cancel = False Then
+
+            Form_Admin_Menu.DeleteBT.Enabled = True
+
+        End If
+
     End Sub
 
     Private Sub MakananRadio_CheckedChanged(sender As Object, e As EventArgs) Handles MakananRadio.CheckedChanged

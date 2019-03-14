@@ -33,57 +33,57 @@ Partial Class Form_Admin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(321, 51)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 24)
+        Me.Label1.Size = New System.Drawing.Size(207, 39)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Form Admin"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(595, 9)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(1265, 12)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 20)
+        Me.Label2.Size = New System.Drawing.Size(150, 37)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Welcome"
         '
         'NamaLBL
         '
         Me.NamaLBL.AutoSize = True
-        Me.NamaLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NamaLBL.Location = New System.Drawing.Point(690, 9)
+        Me.NamaLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NamaLBL.Location = New System.Drawing.Point(1421, 12)
         Me.NamaLBL.Name = "NamaLBL"
-        Me.NamaLBL.Size = New System.Drawing.Size(81, 20)
+        Me.NamaLBL.Size = New System.Drawing.Size(165, 37)
         Me.NamaLBL.TabIndex = 4
         Me.NamaLBL.Text = "NamaText"
         '
         'IDLBL
         '
         Me.IDLBL.AutoSize = True
-        Me.IDLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IDLBL.Location = New System.Drawing.Point(690, 54)
+        Me.IDLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IDLBL.Location = New System.Drawing.Point(1421, 57)
         Me.IDLBL.Name = "IDLBL"
-        Me.IDLBL.Size = New System.Drawing.Size(81, 20)
+        Me.IDLBL.Size = New System.Drawing.Size(165, 37)
         Me.IDLBL.TabIndex = 5
         Me.IDLBL.Text = "NamaText"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(595, 54)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(1265, 57)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 20)
+        Me.Label3.Size = New System.Drawing.Size(48, 37)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "ID"
         '
         'LogOutBT
         '
         Me.LogOutBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogOutBT.Location = New System.Drawing.Point(262, 148)
+        Me.LogOutBT.Location = New System.Drawing.Point(684, 356)
         Me.LogOutBT.Name = "LogOutBT"
         Me.LogOutBT.Size = New System.Drawing.Size(236, 170)
         Me.LogOutBT.TabIndex = 9
@@ -94,7 +94,7 @@ Partial Class Form_Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 450)
+        Me.ClientSize = New System.Drawing.Size(1604, 882)
         Me.Controls.Add(Me.LogOutBT)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.IDLBL)

@@ -190,6 +190,12 @@ Public Class Form_Admin_Karyawan_Input
 
         ClosingValidate(e, Me)
 
+        If e.Cancel = False Then
+
+            Form_Admin_Karyawan.DeleteBT.Enabled = True
+
+        End If
+
     End Sub
 
     Private Sub ConfirmTB_TextChanged(sender As Object, e As EventArgs) Handles ConfirmTB.TextChanged

@@ -151,8 +151,12 @@ Public Class Form_Admin_Menu_Edit
     Private Sub Form_Admin_Menu_Edit_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
 
         ClosingValidate(e, Me)
+        If e.Cancel = False Then
+
+            Form_Admin_Menu.DeleteBT.Enabled = True
+
+        End If
 
     End Sub
-
 
 End Class

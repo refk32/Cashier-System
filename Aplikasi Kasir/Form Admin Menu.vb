@@ -20,24 +20,23 @@ Public Class Form_Admin_Menu
 
             If form.Name.Equals(Me.Name) Or form.Name.Equals(Form_Admin.Name) Then
 
-                'some buggy shit here
+                'HARUS KEK GINI, GK BOLEH PAKE NOT DI IF
 
             Else
 
                 form.Close()
 
             End If
-
-
         Next
 
         For Each form As Form In Form_Master.MdiChildren
 
             If form.Name.Equals(Me.Name) Or form.Name.Equals(Form_Admin.Name) Then
 
-                'some buggy shit here
+                'HARUS KEK GINI, GK BOLEH PAKE NOT DI IF
 
             Else
+
 
                 Exit Sub
 
@@ -54,6 +53,7 @@ Public Class Form_Admin_Menu
         Next
 
         OpenForm(Form_Admin_Menu_Input)
+        DeleteBT.Enabled = False
 
     End Sub
 
@@ -100,6 +100,7 @@ Public Class Form_Admin_Menu
             Form_Admin_Menu_Edit.nama = DataGridView1.CurrentRow.Cells(1).Value
             Form_Admin_Menu_Edit.harga = DataGridView1.CurrentRow.Cells(2).Value
 
+            DeleteBT.Enabled = False
             OpenForm(Form_Admin_Menu_Edit)
 
         End If
@@ -141,4 +142,6 @@ Public Class Form_Admin_Menu
         OpenForm(fa)
 
     End Sub
+
+
 End Class

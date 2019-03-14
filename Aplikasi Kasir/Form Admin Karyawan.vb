@@ -54,6 +54,7 @@ Public Class Form_Admin_Karyawan
 
         Next
 
+        DeleteBT.Enabled = False
         OpenForm(Form_Admin_Karyawan_Input)
 
     End Sub
@@ -99,6 +100,7 @@ Public Class Form_Admin_Karyawan
             Form_Admin_Karyawan_Edit.pertanyaan = DataGridView1.CurrentRow.Cells(5).Value
             Form_Admin_Karyawan_Edit.jawaban = DataGridView1.CurrentRow.Cells(6).Value
 
+            DeleteBT.Enabled = False
             OpenForm(Form_Admin_Karyawan_Edit)
 
         End If
@@ -157,4 +159,5 @@ Public Class Form_Admin_Karyawan
         OpenForm(fa)
 
     End Sub
+
 End Class

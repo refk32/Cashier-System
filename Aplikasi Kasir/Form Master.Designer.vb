@@ -62,25 +62,25 @@ Partial Class Form_Master
         'KaryawanToolStripMenuItem
         '
         Me.KaryawanToolStripMenuItem.Name = "KaryawanToolStripMenuItem"
-        Me.KaryawanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.KaryawanToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.KaryawanToolStripMenuItem.Text = "Karyawan"
         '
         'MenuToolStripMenuItem
         '
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.MenuToolStripMenuItem.Text = "Menu"
         '
         'PajakToolStripMenuItem
         '
         Me.PajakToolStripMenuItem.Name = "PajakToolStripMenuItem"
-        Me.PajakToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PajakToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.PajakToolStripMenuItem.Text = "Pajak"
         '
         'DiskonToolStripMenuItem
         '
         Me.DiskonToolStripMenuItem.Name = "DiskonToolStripMenuItem"
-        Me.DiskonToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DiskonToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.DiskonToolStripMenuItem.Text = "Diskon"
         '
         'ToolStripDropDownButton1
@@ -139,6 +139,7 @@ Partial Class Form_Master
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.ToolStrip2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.IsMdiContainer = True
         Me.Name = "Form_Master"
         Me.Text = "Form_Master"
