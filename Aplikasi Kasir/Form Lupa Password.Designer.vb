@@ -33,72 +33,74 @@ Partial Class Form_Lupa_Password
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BackBT = New System.Windows.Forms.Button()
         Me.PertanyaanCB = New System.Windows.Forms.ComboBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(59, 22)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(172, 39)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(26, 20)
+        Me.Label1.Size = New System.Drawing.Size(44, 33)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID"
         '
         'IDTB
         '
-        Me.IDTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IDTB.Location = New System.Drawing.Point(91, 19)
+        Me.IDTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IDTB.Location = New System.Drawing.Point(178, 75)
         Me.IDTB.Name = "IDTB"
-        Me.IDTB.Size = New System.Drawing.Size(296, 26)
+        Me.IDTB.Size = New System.Drawing.Size(296, 40)
         Me.IDTB.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(136, 32)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(670, 32)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(265, 37)
+        Me.Label2.Size = New System.Drawing.Size(283, 39)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Lupa Password ?"
         '
         'JawabanTB
         '
         Me.JawabanTB.Enabled = False
-        Me.JawabanTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.JawabanTB.Location = New System.Drawing.Point(143, 343)
+        Me.JawabanTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.JawabanTB.Location = New System.Drawing.Point(102, 184)
         Me.JawabanTB.Name = "JawabanTB"
-        Me.JawabanTB.Size = New System.Drawing.Size(287, 26)
+        Me.JawabanTB.Size = New System.Drawing.Size(458, 41)
         Me.JawabanTB.TabIndex = 4
         '
         'JawabanLabel
         '
         Me.JawabanLabel.AutoSize = True
-        Me.JawabanLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.JawabanLabel.Location = New System.Drawing.Point(50, 349)
+        Me.JawabanLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.JawabanLabel.Location = New System.Drawing.Point(96, 145)
         Me.JawabanLabel.Name = "JawabanLabel"
-        Me.JawabanLabel.Size = New System.Drawing.Size(73, 20)
+        Me.JawabanLabel.Size = New System.Drawing.Size(134, 36)
         Me.JawabanLabel.TabIndex = 3
         Me.JawabanLabel.Text = "Jawaban"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(33, 285)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(96, 32)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 20)
+        Me.Label3.Size = New System.Drawing.Size(166, 36)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Pertanyaan"
         '
         'OkBT
         '
-        Me.OkBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OkBT.Location = New System.Drawing.Point(289, 75)
+        Me.OkBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OkBT.Location = New System.Drawing.Point(271, 130)
         Me.OkBT.Name = "OkBT"
-        Me.OkBT.Size = New System.Drawing.Size(98, 38)
+        Me.OkBT.Size = New System.Drawing.Size(111, 66)
         Me.OkBT.TabIndex = 7
         Me.OkBT.Text = "Ok"
         Me.OkBT.UseVisualStyleBackColor = True
@@ -106,10 +108,10 @@ Partial Class Form_Lupa_Password
         'ContinueBT
         '
         Me.ContinueBT.Enabled = False
-        Me.ContinueBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContinueBT.Location = New System.Drawing.Point(332, 389)
+        Me.ContinueBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ContinueBT.Location = New System.Drawing.Point(715, 655)
         Me.ContinueBT.Name = "ContinueBT"
-        Me.ContinueBT.Size = New System.Drawing.Size(98, 38)
+        Me.ContinueBT.Size = New System.Drawing.Size(174, 115)
         Me.ContinueBT.TabIndex = 8
         Me.ContinueBT.Text = "Lanjut"
         Me.ContinueBT.UseVisualStyleBackColor = True
@@ -119,18 +121,18 @@ Partial Class Form_Lupa_Password
         Me.GroupBox1.Controls.Add(Me.IDTB)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.OkBT)
-        Me.GroupBox1.Location = New System.Drawing.Point(37, 91)
+        Me.GroupBox1.Location = New System.Drawing.Point(471, 91)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(393, 138)
+        Me.GroupBox1.Size = New System.Drawing.Size(652, 220)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         '
         'BackBT
         '
-        Me.BackBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BackBT.Location = New System.Drawing.Point(13, 13)
+        Me.BackBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBT.Location = New System.Drawing.Point(1438, 12)
         Me.BackBT.Name = "BackBT"
-        Me.BackBT.Size = New System.Drawing.Size(73, 38)
+        Me.BackBT.Size = New System.Drawing.Size(154, 85)
         Me.BackBT.TabIndex = 10
         Me.BackBT.Text = "Back"
         Me.BackBT.UseVisualStyleBackColor = True
@@ -139,31 +141,43 @@ Partial Class Form_Lupa_Password
         '
         Me.PertanyaanCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.PertanyaanCB.Enabled = False
-        Me.PertanyaanCB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PertanyaanCB.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PertanyaanCB.FormattingEnabled = True
         Me.PertanyaanCB.Items.AddRange(New Object() {"Siapa nama peliharaan anda ?", "Siapa nama guru pertama anda ?", "Apa nama sekolah SD anda ?", "Apa nama film favorit anda ?", "Apa nama Kartun favorit anda ?", "Siapa aktor kesukaan anda ?"})
-        Me.PertanyaanCB.Location = New System.Drawing.Point(143, 284)
+        Me.PertanyaanCB.Location = New System.Drawing.Point(102, 82)
         Me.PertanyaanCB.Name = "PertanyaanCB"
-        Me.PertanyaanCB.Size = New System.Drawing.Size(281, 28)
+        Me.PertanyaanCB.Size = New System.Drawing.Size(458, 41)
         Me.PertanyaanCB.TabIndex = 16
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Controls.Add(Me.PertanyaanCB)
+        Me.GroupBox2.Controls.Add(Me.JawabanLabel)
+        Me.GroupBox2.Controls.Add(Me.JawabanTB)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Tai Le", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(471, 359)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(662, 248)
+        Me.GroupBox2.TabIndex = 17
+        Me.GroupBox2.TabStop = False
         '
         'Form_Lupa_Password
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(518, 450)
-        Me.Controls.Add(Me.PertanyaanCB)
+        Me.ClientSize = New System.Drawing.Size(1604, 882)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.BackBT)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ContinueBT)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.JawabanTB)
-        Me.Controls.Add(Me.JawabanLabel)
         Me.Controls.Add(Me.Label2)
         Me.Name = "Form_Lupa_Password"
         Me.Text = "Form_Lupa_Password"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -180,4 +194,5 @@ Partial Class Form_Lupa_Password
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BackBT As Button
     Friend WithEvents PertanyaanCB As ComboBox
+    Friend WithEvents GroupBox2 As GroupBox
 End Class

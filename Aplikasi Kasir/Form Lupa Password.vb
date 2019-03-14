@@ -15,7 +15,7 @@ Public Class Form_Lupa_Password
 
     Private Sub OkBT_Click(sender As Object, e As EventArgs) Handles OkBT.Click
 
-        dt = DAFillDT("select id_kry from Table_Karyawan where id_kry = '" + IDTB.Text + "'")
+        dt = DAFillDT("select id_kry from Table_Karyawan where id_kry = '" + IDTB.Text + "' COLLATE SQL_Latin1_General_CP1_CS_AS")
 
         If dt.Rows.Count > 0 Then
 

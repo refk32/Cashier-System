@@ -47,6 +47,7 @@ Partial Class Form_Admin_Karyawan_Input
         Me.Label9 = New System.Windows.Forms.Label()
         Me.PasswordCheck = New System.Windows.Forms.CheckBox()
         Me.ConfirmCheck = New System.Windows.Forms.CheckBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -152,7 +153,7 @@ Partial Class Form_Admin_Karyawan_Input
         '
         Me.SaveBT.Enabled = False
         Me.SaveBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveBT.Location = New System.Drawing.Point(1135, 730)
+        Me.SaveBT.Location = New System.Drawing.Point(726, 744)
         Me.SaveBT.Name = "SaveBT"
         Me.SaveBT.Size = New System.Drawing.Size(153, 107)
         Me.SaveBT.TabIndex = 10
@@ -311,11 +312,22 @@ Partial Class Form_Admin_Karyawan_Input
         Me.ConfirmCheck.Text = "Visible"
         Me.ConfirmCheck.UseVisualStyleBackColor = True
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(1076, 43)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(366, 39)
+        Me.Label8.TabIndex = 26
+        Me.Label8.Text = "Form Karyawan Input"
+        '
         'Form_Admin_Karyawan_Input
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1604, 882)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ConfirmCheck)
         Me.Controls.Add(Me.PasswordCheck)
         Me.Controls.Add(Me.ConfirmLBL)
@@ -374,4 +386,5 @@ Partial Class Form_Admin_Karyawan_Input
     Friend WithEvents Label9 As Label
     Friend WithEvents PasswordCheck As CheckBox
     Friend WithEvents ConfirmCheck As CheckBox
+    Friend WithEvents Label8 As Label
 End Class
