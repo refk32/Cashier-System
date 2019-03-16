@@ -39,4 +39,10 @@ Public Class Form_Kasir
         Form_Master.ToolStrip2.Visible = True
 
     End Sub
+
+    Private Sub Form_Kasir_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+
+        e.Cancel = True
+
+    End Sub
 End Class

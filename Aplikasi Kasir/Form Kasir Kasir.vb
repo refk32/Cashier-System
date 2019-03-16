@@ -450,6 +450,12 @@ Public Class Form_Kasir_Kasir
 
         ClosingValidate(e, Me)
 
+        If e.Cancel = False Then
+
+            OpenForm(fk)
+
+        End If
+
     End Sub
 
 End Class

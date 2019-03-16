@@ -83,7 +83,7 @@ Partial Class Form_Admin
         'LogOutBT
         '
         Me.LogOutBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogOutBT.Location = New System.Drawing.Point(684, 356)
+        Me.LogOutBT.Location = New System.Drawing.Point(684, 588)
         Me.LogOutBT.Name = "LogOutBT"
         Me.LogOutBT.Size = New System.Drawing.Size(236, 170)
         Me.LogOutBT.TabIndex = 9
