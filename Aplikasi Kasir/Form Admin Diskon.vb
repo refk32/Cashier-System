@@ -381,4 +381,7 @@ Public Class Form_Admin_Diskon
 
     End Sub
 
+    Private Sub Form_Admin_Diskon_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

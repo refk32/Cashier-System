@@ -296,10 +296,10 @@ Partial Class Form_Kasir_Kasir
         '
         'HitungTB
         '
-        Me.HitungTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HitungTB.Location = New System.Drawing.Point(220, 155)
+        Me.HitungTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HitungTB.Location = New System.Drawing.Point(206, 165)
         Me.HitungTB.Name = "HitungTB"
-        Me.HitungTB.Size = New System.Drawing.Size(75, 36)
+        Me.HitungTB.Size = New System.Drawing.Size(89, 59)
         Me.HitungTB.TabIndex = 23
         Me.HitungTB.Text = "Hitung"
         Me.HitungTB.UseVisualStyleBackColor = True
@@ -307,9 +307,9 @@ Partial Class Form_Kasir_Kasir
         'SaveBT
         '
         Me.SaveBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveBT.Location = New System.Drawing.Point(15, 740)
+        Me.SaveBT.Location = New System.Drawing.Point(15, 723)
         Me.SaveBT.Name = "SaveBT"
-        Me.SaveBT.Size = New System.Drawing.Size(87, 43)
+        Me.SaveBT.Size = New System.Drawing.Size(105, 60)
         Me.SaveBT.TabIndex = 24
         Me.SaveBT.Text = "Save"
         Me.SaveBT.UseVisualStyleBackColor = True
@@ -325,7 +325,7 @@ Partial Class Form_Kasir_Kasir
         Me.GroupBox1.Controls.Add(Me.KembalianTB)
         Me.GroupBox1.Location = New System.Drawing.Point(15, 487)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(320, 200)
+        Me.GroupBox1.Size = New System.Drawing.Size(320, 230)
         Me.GroupBox1.TabIndex = 28
         Me.GroupBox1.TabStop = False
         '
@@ -407,7 +407,8 @@ Partial Class Form_Kasir_Kasir
         '
         'BackBT
         '
-        Me.BackBT.Location = New System.Drawing.Point(1378, 55)
+        Me.BackBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBT.Location = New System.Drawing.Point(1378, 12)
         Me.BackBT.Name = "BackBT"
         Me.BackBT.Size = New System.Drawing.Size(112, 58)
         Me.BackBT.TabIndex = 38

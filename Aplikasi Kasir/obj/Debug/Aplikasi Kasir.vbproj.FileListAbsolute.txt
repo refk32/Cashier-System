@@ -116,3 +116,4 @@ C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Ap
 C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.exe
 C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.xml
 C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi Kasir.pdb
+C:\Users\Raffael\Documents\manual git\Cashier System\Aplikasi Kasir\obj\Debug\Aplikasi_Kasir.Form_Report_Semua_Detail_Transaksi.resources

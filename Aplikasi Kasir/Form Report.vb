@@ -50,12 +50,17 @@ Public Class Form_Report
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ReportDetailTRBT.Click
+    Private Sub ReportDetailTRBT_Click(sender As Object, e As EventArgs) Handles ReportDetailTRBT.Click
 
         If IDTRLB.SelectedIndex >= 0 Then
 
             Form_Report_Master_Transaksi.id_tr = CType(IDTRLB.SelectedItem, DataRowView).Row.Item(0).ToString()
             Form_Report_Master_Transaksi.Show()
+
+
+        ElseIf String.IsNullOrWhiteSpace(IDTRTB.Text) Then
+
+            Form_Report_Semua_Detail_Transaksi.Show()
 
         End If
 
