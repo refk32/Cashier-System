@@ -186,7 +186,7 @@ Partial Class Form_Admin_Karyawan_Input
         Me.JawabanTB.Location = New System.Drawing.Point(457, 671)
         Me.JawabanTB.MaxLength = 30
         Me.JawabanTB.Name = "JawabanTB"
-        Me.JawabanTB.Size = New System.Drawing.Size(392, 40)
+        Me.JawabanTB.Size = New System.Drawing.Size(538, 40)
         Me.JawabanTB.TabIndex = 15
         '
         'PertanyaanCB
@@ -197,7 +197,7 @@ Partial Class Form_Admin_Karyawan_Input
         Me.PertanyaanCB.Items.AddRange(New Object() {"Siapa nama peliharaan anda ?", "Siapa nama guru pertama anda ?", "Apa nama sekolah SD anda ?", "Apa nama film favorit anda ?", "Apa nama Kartun favorit anda ?", "Siapa aktor kesukaan anda ?"})
         Me.PertanyaanCB.Location = New System.Drawing.Point(457, 581)
         Me.PertanyaanCB.Name = "PertanyaanCB"
-        Me.PertanyaanCB.Size = New System.Drawing.Size(392, 41)
+        Me.PertanyaanCB.Size = New System.Drawing.Size(538, 41)
         Me.PertanyaanCB.TabIndex = 14
         '
         'NamaLBL
@@ -241,7 +241,7 @@ Partial Class Form_Admin_Karyawan_Input
         Me.JawabanLBL.AutoSize = True
         Me.JawabanLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.JawabanLBL.ForeColor = System.Drawing.Color.Red
-        Me.JawabanLBL.Location = New System.Drawing.Point(868, 681)
+        Me.JawabanLBL.Location = New System.Drawing.Point(1011, 678)
         Me.JawabanLBL.Name = "JawabanLBL"
         Me.JawabanLBL.Size = New System.Drawing.Size(118, 33)
         Me.JawabanLBL.TabIndex = 19
@@ -316,7 +316,7 @@ Partial Class Form_Admin_Karyawan_Input
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(1076, 43)
+        Me.Label8.Location = New System.Drawing.Point(1226, 191)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(366, 39)
         Me.Label8.TabIndex = 26
