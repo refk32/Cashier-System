@@ -319,7 +319,7 @@ Partial Class Form_Admin_Karyawan_Edit
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(1060, 45)
+        Me.Label8.Location = New System.Drawing.Point(1227, 151)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(349, 39)
         Me.Label8.TabIndex = 65

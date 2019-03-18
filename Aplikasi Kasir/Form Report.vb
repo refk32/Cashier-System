@@ -54,12 +54,24 @@ Public Class Form_Report
 
         If IDTRLB.SelectedIndex >= 0 Then
 
+            'ctype to convert to another type, must do this because selecteditem can't return name, so we change it to datarowview and get the item like that
             Form_Report_Master_Transaksi.id_tr = CType(IDTRLB.SelectedItem, DataRowView).Row.Item(0).ToString()
             Form_Report_Master_Transaksi.Show()
 
 
         ElseIf String.IsNullOrWhiteSpace(IDTRTB.Text) Then
 
+            Dim item As String
+            Dim idtr(IDTRLB.Items.Count - 1) As String
+
+            For i As Integer = 0 To IDTRLB.Items.Count - 1
+
+                item = CType(IDTRLB.Items(i), DataRowView).Row.Item(0).ToString()
+                idtr(i) = item
+
+            Next
+
+            Form_Report_Semua_Detail_Transaksi.idtr = idtr
             Form_Report_Semua_Detail_Transaksi.Show()
 
         End If
@@ -137,4 +149,5 @@ Public Class Form_Report
         OpenForm(fa)
 
     End Sub
+
 End Class
