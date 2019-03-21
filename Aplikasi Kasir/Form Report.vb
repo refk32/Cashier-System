@@ -57,7 +57,7 @@ Public Class Form_Report
             'ctype to convert to another type, must do this because selecteditem can't return name, so we change it to datarowview and get the item like that
             Form_Report_Master_Transaksi.id_tr = CType(IDTRLB.SelectedItem, DataRowView).Row.Item(0).ToString()
             Form_Report_Master_Transaksi.Show()
-
+            IDTRLB.SelectedIndex = -1
 
         ElseIf String.IsNullOrWhiteSpace(IDTRTB.Text) Then
 
@@ -73,6 +73,7 @@ Public Class Form_Report
 
             Form_Report_Semua_Detail_Transaksi.idtr = idtr
             Form_Report_Semua_Detail_Transaksi.Show()
+            IDTRLB.SelectedIndex = -1
 
         End If
 
@@ -150,4 +151,13 @@ Public Class Form_Report
 
     End Sub
 
+    Private Sub IDTRTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles IDTRTB.KeyPress
+
+        If String.IsNullOrWhiteSpace(IDTRTB.Text) Then
+
+            IDTRLB.SelectedIndex = -1
+
+        End If
+
+    End Sub
 End Class

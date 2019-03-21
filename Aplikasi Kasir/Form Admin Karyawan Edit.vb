@@ -43,7 +43,7 @@ Public Class Form_Admin_Karyawan_Edit
 
             MsgBox("Edit berhasil")
             Form_Admin_Karyawan.DisplayMenu()
-            Me.Hide()
+            ClosingWithoutValidate(Me)
 
         End If
 
@@ -187,7 +187,7 @@ Public Class Form_Admin_Karyawan_Edit
 
     Sub ControlConfirm()
 
-        If Not PasswordTB.Text.Equals(ConfirmTB.Text) Then
+        If Not PasswordTB.Text.Equals(ConfirmTB.Text) And Not String.IsNullOrWhiteSpace(ConfirmTB.Text) Then
 
             ConfirmLBL.Visible = True
             ConfirmLBL.Text = "Password harus sama"

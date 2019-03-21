@@ -39,7 +39,7 @@ Partial Class Form_Report
         'IDTRTB
         '
         Me.IDTRTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IDTRTB.Location = New System.Drawing.Point(252, 428)
+        Me.IDTRTB.Location = New System.Drawing.Point(279, 337)
         Me.IDTRTB.Name = "IDTRTB"
         Me.IDTRTB.Size = New System.Drawing.Size(228, 40)
         Me.IDTRTB.TabIndex = 19
@@ -49,7 +49,7 @@ Partial Class Form_Report
         Me.IDTRLB.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IDTRLB.FormattingEnabled = True
         Me.IDTRLB.ItemHeight = 33
-        Me.IDTRLB.Location = New System.Drawing.Point(252, 483)
+        Me.IDTRLB.Location = New System.Drawing.Point(279, 392)
         Me.IDTRLB.Name = "IDTRLB"
         Me.IDTRLB.Size = New System.Drawing.Size(228, 103)
         Me.IDTRLB.TabIndex = 18
@@ -68,7 +68,9 @@ Partial Class Form_Report
         '
         Me.GroupBox1.Controls.Add(Me.KaryawanCB)
         Me.GroupBox1.Controls.Add(Me.ReportBT)
+        Me.GroupBox1.Controls.Add(Me.IDTRTB)
         Me.GroupBox1.Controls.Add(Me.TransaksiRB)
+        Me.GroupBox1.Controls.Add(Me.IDTRLB)
         Me.GroupBox1.Controls.Add(Me.MenuRB)
         Me.GroupBox1.Controls.Add(Me.KaryawanRB)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -158,8 +160,6 @@ Partial Class Form_Report
         Me.ClientSize = New System.Drawing.Size(1604, 882)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackBT)
-        Me.Controls.Add(Me.IDTRTB)
-        Me.Controls.Add(Me.IDTRLB)
         Me.Controls.Add(Me.ReportDetailTRBT)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form_Report"
