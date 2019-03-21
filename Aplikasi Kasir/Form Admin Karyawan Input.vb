@@ -21,7 +21,7 @@ Public Class Form_Admin_Karyawan_Input
 
                 MsgBox("input data berhasil")
                 Form_Admin_Karyawan.DisplayMenu()
-                Me.Close()
+                ClosingWithoutValidate(Me)
 
             Catch ex As SqlException
 
@@ -235,7 +235,7 @@ Public Class Form_Admin_Karyawan_Input
 
     Sub ControlConfirm()
 
-        If Not PasswordTB.Text.Equals(ConfirmTB.Text) Then
+        If Not PasswordTB.Text.Equals(ConfirmTB.Text) And Not String.IsNullOrWhiteSpace(ConfirmTB.Text) Then
 
             ConfirmLBL.Visible = True
             ConfirmLBL.Text = "Password harus sama"
