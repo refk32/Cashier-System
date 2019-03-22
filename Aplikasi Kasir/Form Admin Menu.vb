@@ -5,6 +5,7 @@ Public Class Form_Admin_Menu
 
     Public fa As Form_Admin
     Public a() As String
+    Dim header = New String() {"Kode", "Nama", "Harga"}
 
     Private Sub Form_Admin_Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -60,6 +61,12 @@ Public Class Form_Admin_Menu
     Public Sub DisplayMenu()
 
         DataGridView1.DataSource = (DAFillDS("select * from table_menu", "table_menu").Tables("table_menu"))
+
+        For i As Integer = 0 To DataGridView1.Columns.Count - 1
+
+            DataGridView1.Columns(i).HeaderText = header(i)
+
+        Next
 
     End Sub
 

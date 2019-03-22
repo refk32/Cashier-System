@@ -189,7 +189,6 @@ Module Koneksi_Module
     Public Sub ClosingValidate(e As FormClosingEventArgs, meform As Form, Optional validate As Boolean = True)
         Dim result As MsgBoxResult
 
-
         If Not validate Or Not _validate Then
 
             e.Cancel = False
