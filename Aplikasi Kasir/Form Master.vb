@@ -121,7 +121,7 @@ Public Class Form_Master
 
             Application.Exit()
 
-        Else
+        ElseIf result = vbNo Then
 
             e.Cancel() = True
 

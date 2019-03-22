@@ -4,6 +4,7 @@ Public Class Form_Admin_Pajak
 
     Public fa As Form_Admin
     Dim nick As String()
+    Dim header = New String() {"Nickname", "Nama", "Persen"}
 
     Private Sub Form_Admin_Pajak_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
 
@@ -52,6 +53,12 @@ Public Class Form_Admin_Pajak
             Next
 
         End If
+
+        For i As Integer = 0 To DataGridView1.Columns.Count - 1
+
+            DataGridView1.Columns(i).HeaderText = header(i)
+
+        Next
 
     End Sub
 

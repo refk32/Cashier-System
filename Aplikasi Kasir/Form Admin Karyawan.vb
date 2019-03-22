@@ -6,10 +6,18 @@ Public Class Form_Admin_Karyawan
     Public fa As Form_Admin
     Public id As String
     Public a() As String
+    Dim header = New String() {"Nama Lengkap", "Jenis Kelamin", "Jabatan", "ID", "Password", "Pertanyaan Rahasia", "Jawaban
+Rahasia"}
 
     Public Sub DisplayMenu()
 
         DataGridView1.DataSource = (DAFillDS("select * from table_karyawan", "table_karyawan").Tables("table_karyawan"))
+
+        For i As Integer = 0 To DataGridView1.Columns.Count - 1
+
+            DataGridView1.Columns(i).HeaderText = header(i)
+
+        Next
 
     End Sub
 
@@ -156,8 +164,15 @@ Public Class Form_Admin_Karyawan
 
     Private Sub Form_Admin_Karyawan_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
 
+        'OpenForm(fa)
+
+    End Sub
+
+    Private Sub Form_Admin_Karyawan_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
         OpenForm(fa)
 
     End Sub
+
 
 End Class
