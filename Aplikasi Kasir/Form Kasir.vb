@@ -12,7 +12,7 @@ Public Class Form_Kasir
     End Sub
 
 
-    Private Sub LogOutBt_(sender As Object, e As EventArgs) Handles LogOutBT.Click
+    Private Sub LogOutBt_Click(sender As Object, e As EventArgs) Handles LogOutBT.Click
 
         For Each form As Form In Form_Master.MdiChildren
 
@@ -27,8 +27,8 @@ Public Class Form_Kasir
         Form_Login.idTB.Text = ""
         Form_Login.passTB.Text = ""
 
+        Me.Hide()
         OpenForm(Form_Login)
-        Me.Close()
 
         Form_Master.ToolStrip2.Visible = False
 
@@ -40,9 +40,21 @@ Public Class Form_Kasir
 
     End Sub
 
-    Private Sub Form_Kasir_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Kasir_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        e.Cancel = True
+        If e.CloseReason = CloseReason.MdiFormClosing Then
+
+            Exit Sub
+
+        End If
+
+        ClosingWithoutValidate(Me)
+
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
+        XButton()
 
     End Sub
 End Class

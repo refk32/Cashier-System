@@ -236,7 +236,6 @@ Partial Class Form_Kasir_Kasir
         Me.TotalHargaTB.ReadOnly = True
         Me.TotalHargaTB.Size = New System.Drawing.Size(156, 26)
         Me.TotalHargaTB.TabIndex = 14
-        Me.TotalHargaTB.Text = "0"
         '
         'PembayaranTB
         '
@@ -273,7 +272,6 @@ Partial Class Form_Kasir_Kasir
         Me.KembalianTB.ReadOnly = True
         Me.KembalianTB.Size = New System.Drawing.Size(156, 26)
         Me.KembalianTB.TabIndex = 22
-        Me.KembalianTB.Text = "0"
         '
         'Label8
         '

@@ -134,7 +134,7 @@ Public Class Form_Kasir_Kasir
             rownumber = rownumber - 1
             QuantityNUD2_Update()
             TotalHargaSub()
-            KembalianTB.Text = 0
+            KembalianTB.Clear()
 
         End If
 
@@ -148,6 +148,14 @@ Public Class Form_Kasir_Kasir
         Dim persen As Double
         Dim diskon As Double
         Dim maxpotongan As Integer
+
+        If DataGridView1.Rows.Count < 0 Then
+
+            TotalHargaTB.Clear()
+
+            Exit Sub
+
+        End If
 
         harga = 0
 
@@ -222,7 +230,7 @@ Public Class Form_Kasir_Kasir
 
         Else
 
-            TotalHargaTB.Text = 0
+            TotalHargaTB.Clear()
 
         End If
 
@@ -286,7 +294,7 @@ Public Class Form_Kasir_Kasir
 
     Private Sub SaveBT_Click(sender As Object, e As EventArgs) Handles SaveBT.Click
 
-        If KembalianTB.Text = "0" Or TotalHargaTB.Text = "0" Or TotalHargaTB.Text = "0" Then
+        If KembalianTB.Text = "0" Or TotalHargaTB.Text = "0" Or String.IsNullOrWhiteSpace(KembalianTB.Text) Or String.IsNullOrWhiteSpace(TotalHargaTB.Text) Then
 
             MsgBox("data belum lengkap")
 
@@ -442,20 +450,24 @@ Public Class Form_Kasir_Kasir
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
         Me.Close()
-        OpenForm(fk)
 
     End Sub
 
-    Private Sub Form_Kasir_Kasir_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Kasir_Kasir_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        ClosingValidate(e, Me)
+        If e.CloseReason = CloseReason.MdiFormClosing Then
 
-        If e.Cancel = False Then
-
-            OpenForm(fk)
+            Exit Sub
 
         End If
 
+        ClosingValidate(e, Me)
+
     End Sub
 
+    Private Sub Form_Kasir_Kasir_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
+        OpenForm(fk)
+
+    End Sub
 End Class
