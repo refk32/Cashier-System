@@ -141,13 +141,18 @@ Public Class Form_Report
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
         Me.Close()
-        OpenForm(fa)
 
     End Sub
 
-    Private Sub Form_Report_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Report_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        OpenForm(fa)
+        If e.CloseReason = CloseReason.MdiFormClosing Then
+
+            Exit Sub
+
+        End If
+
+        ClosingValidate(e, Me)
 
     End Sub
 
@@ -158,6 +163,12 @@ Public Class Form_Report
             IDTRLB.SelectedIndex = -1
 
         End If
+
+    End Sub
+
+    Private Sub Form_Report_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
+        OpenForm(fa)
 
     End Sub
 End Class

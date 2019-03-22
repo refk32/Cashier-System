@@ -13,6 +13,8 @@ Module Koneksi_Module
     Dim dt As DataTable
     Dim ds As DataSet
 
+    Dim result As MsgBoxResult
+
     Public _validate As Boolean = True
 
     Public Sub Koneksi()
@@ -187,7 +189,6 @@ Module Koneksi_Module
     End Function
 
     Public Sub ClosingValidate(e As FormClosingEventArgs, meform As Form, Optional validate As Boolean = True)
-        Dim result As MsgBoxResult
 
         If Not validate Or Not _validate Then
 
@@ -211,6 +212,18 @@ Module Koneksi_Module
         _validate = False
         form.Close()
         _validate = True
+
+    End Sub
+
+    Public Sub XButton()
+
+        result = MsgBox("Exit ?", vbYesNo, "Exit")
+
+        If result = vbYes Then
+
+            Application.Exit()
+
+        End If
 
     End Sub
 

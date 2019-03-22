@@ -29,7 +29,9 @@ Partial Class Form_Login
         Me.Label3 = New System.Windows.Forms.Label()
         Me.passTB = New System.Windows.Forms.TextBox()
         Me.idTB = New System.Windows.Forms.TextBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -100,6 +102,17 @@ Partial Class Form_Login
         Me.idTB.Size = New System.Drawing.Size(474, 44)
         Me.idTB.TabIndex = 3
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox2.Image = Global.Aplikasi_Kasir.My.Resources.Resources._458594
+        Me.PictureBox2.Location = New System.Drawing.Point(1528, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(60, 60)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Aplikasi_Kasir.My.Resources.Resources.cashier_icon_png_2
@@ -116,6 +129,8 @@ Partial Class Form_Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1600, 882)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LupaPasswordBT)
         Me.Controls.Add(Me.LoginBT)
@@ -127,6 +142,7 @@ Partial Class Form_Login
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form_Login"
         Me.Text = "Form1"
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -141,4 +157,5 @@ Partial Class Form_Login
     Friend WithEvents passTB As TextBox
     Friend WithEvents idTB As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

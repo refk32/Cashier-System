@@ -166,15 +166,15 @@ Public Class Form_Admin_Karyawan_Edit
 
     End Sub
 
-    Private Sub Form_Admin_Karyawan_Edit_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Admin_Karyawan_Edit_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        ClosingValidate(e, Me)
+        If e.CloseReason = CloseReason.MdiFormClosing Then
 
-        If e.Cancel = False Then
-
-            Form_Admin_Karyawan.DeleteBT.Enabled = True
+            Exit Sub
 
         End If
+
+        ClosingValidate(e, Me)
 
     End Sub
 
@@ -229,4 +229,9 @@ Public Class Form_Admin_Karyawan_Edit
 
     End Sub
 
+    Private Sub Form_Admin_Karyawan_Edit_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
+        Form_Admin_Karyawan.DeleteBT.Enabled = True
+
+    End Sub
 End Class

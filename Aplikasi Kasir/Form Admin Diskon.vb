@@ -292,19 +292,18 @@ Public Class Form_Admin_Diskon
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
         Me.Close()
-        OpenForm(fa)
 
     End Sub
 
-    Private Sub Form_Admin_Diskon_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Admin_Diskon_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        ClosingValidate(e, Me)
+        If e.CloseReason = CloseReason.MdiFormClosing Then
 
-        If e.Cancel = False Then
-
-            OpenForm(fa)
+            Exit Sub
 
         End If
+
+        ClosingValidate(e, Me)
 
     End Sub
 
@@ -385,10 +384,12 @@ Public Class Form_Admin_Diskon
 
         End If
 
+    End Sub
+
+    Private Sub Form_Admin_Diskon_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
+        OpenForm(fa)
 
     End Sub
 
-    Private Sub Form_Admin_Diskon_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

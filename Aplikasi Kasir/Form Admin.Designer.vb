@@ -28,6 +28,8 @@ Partial Class Form_Admin
         Me.IDLBL = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LogOutBT = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -44,7 +46,7 @@ Partial Class Form_Admin
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1265, 12)
+        Me.Label2.Location = New System.Drawing.Point(12, 77)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(150, 37)
         Me.Label2.TabIndex = 3
@@ -54,7 +56,7 @@ Partial Class Form_Admin
         '
         Me.NamaLBL.AutoSize = True
         Me.NamaLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NamaLBL.Location = New System.Drawing.Point(1421, 12)
+        Me.NamaLBL.Location = New System.Drawing.Point(168, 77)
         Me.NamaLBL.Name = "NamaLBL"
         Me.NamaLBL.Size = New System.Drawing.Size(165, 37)
         Me.NamaLBL.TabIndex = 4
@@ -64,7 +66,7 @@ Partial Class Form_Admin
         '
         Me.IDLBL.AutoSize = True
         Me.IDLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IDLBL.Location = New System.Drawing.Point(1421, 57)
+        Me.IDLBL.Location = New System.Drawing.Point(168, 122)
         Me.IDLBL.Name = "IDLBL"
         Me.IDLBL.Size = New System.Drawing.Size(165, 37)
         Me.IDLBL.TabIndex = 5
@@ -74,7 +76,7 @@ Partial Class Form_Admin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(1265, 57)
+        Me.Label3.Location = New System.Drawing.Point(12, 122)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(48, 37)
         Me.Label3.TabIndex = 6
@@ -90,11 +92,23 @@ Partial Class Form_Admin
         Me.LogOutBT.Text = "Log Out"
         Me.LogOutBT.UseVisualStyleBackColor = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox2.Image = Global.Aplikasi_Kasir.My.Resources.Resources._458594
+        Me.PictureBox2.Location = New System.Drawing.Point(1532, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(60, 60)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 10
+        Me.PictureBox2.TabStop = False
+        '
         'Form_Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1604, 882)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.LogOutBT)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.IDLBL)
@@ -103,6 +117,7 @@ Partial Class Form_Admin
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form_Admin"
         Me.Text = "Form_Admin"
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -114,4 +129,5 @@ Partial Class Form_Admin
     Friend WithEvents IDLBL As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents LogOutBT As Button
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

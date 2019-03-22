@@ -148,15 +148,21 @@ Public Class Form_Admin_Menu_Edit
 
     End Sub
 
-    Private Sub Form_Admin_Menu_Edit_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Admin_Menu_Edit_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        ClosingValidate(e, Me)
-        If e.Cancel = False Then
+        If e.CloseReason = CloseReason.MdiFormClosing Then
 
-            Form_Admin_Menu.DeleteBT.Enabled = True
+            Exit Sub
 
         End If
 
+        ClosingValidate(e, Me)
+
     End Sub
 
+    Private Sub Form_Admin_Menu_Edit_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
+        Form_Admin_Menu.DeleteBT.Enabled = True
+
+    End Sub
 End Class
