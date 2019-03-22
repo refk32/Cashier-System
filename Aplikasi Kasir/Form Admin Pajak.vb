@@ -19,15 +19,15 @@ Public Class Form_Admin_Pajak
 
     End Sub
 
-    Private Sub Form_Admin_Pajak_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Admin_Pajak_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        ClosingValidate(e, Me)
+        If e.CloseReason = CloseReason.MdiFormClosing Then
 
-        If e.Cancel = False Then
-
-            OpenForm(fa)
+            Exit Sub
 
         End If
+
+        ClosingValidate(e, Me)
 
     End Sub
 
@@ -228,4 +228,9 @@ Public Class Form_Admin_Pajak
 
     End Sub
 
+    Private Sub Form_Admin_Pajak_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
+        OpenForm(fa)
+
+    End Sub
 End Class

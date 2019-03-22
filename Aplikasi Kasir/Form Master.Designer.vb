@@ -24,6 +24,7 @@ Partial Class Form_Master
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Master))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.Edit = New System.Windows.Forms.ToolStripDropDownButton()
         Me.KaryawanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -32,7 +33,6 @@ Partial Class Form_Master
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.RiwayatTransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripDropDownButton2 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.KasirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
@@ -48,6 +48,16 @@ Partial Class Form_Master
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         Me.ToolStrip1.Visible = False
+        '
+        'ToolStrip2
+        '
+        Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2})
+        Me.ToolStrip2.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip2.Name = "ToolStrip2"
+        Me.ToolStrip2.Size = New System.Drawing.Size(800, 25)
+        Me.ToolStrip2.TabIndex = 3
+        Me.ToolStrip2.Text = "ToolStrip2"
+        Me.ToolStrip2.Visible = False
         '
         'Edit
         '
@@ -105,16 +115,6 @@ Partial Class Form_Master
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.ReportToolStripMenuItem.Text = "Report"
         '
-        'ToolStrip2
-        '
-        Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2})
-        Me.ToolStrip2.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip2.Name = "ToolStrip2"
-        Me.ToolStrip2.Size = New System.Drawing.Size(800, 25)
-        Me.ToolStrip2.TabIndex = 3
-        Me.ToolStrip2.Text = "ToolStrip2"
-        Me.ToolStrip2.Visible = False
-        '
         'ToolStripDropDownButton2
         '
         Me.ToolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
@@ -137,6 +137,7 @@ Partial Class Form_Master
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ControlBox = False
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.ToolStrip2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

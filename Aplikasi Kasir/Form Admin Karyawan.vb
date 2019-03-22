@@ -161,18 +161,10 @@ Rahasia"}
 
     End Sub
 
-
-    Private Sub Form_Admin_Karyawan_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-
-        'OpenForm(fa)
-
-    End Sub
-
     Private Sub Form_Admin_Karyawan_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
         OpenForm(fa)
 
     End Sub
-
 
 End Class

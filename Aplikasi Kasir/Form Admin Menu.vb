@@ -144,11 +144,9 @@ Public Class Form_Admin_Menu
 
     End Sub
 
-    Private Sub Form_Admin_Menu_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Admin_Menu_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
         OpenForm(fa)
 
     End Sub
-
-
 End Class

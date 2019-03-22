@@ -22,7 +22,6 @@ Public Class Form_Riwayat_Transaksi
     Private Sub BackBT_Click(sender As Object, e As EventArgs) Handles BackBT.Click
 
         Me.Close()
-        OpenForm(fa)
 
     End Sub
 
@@ -34,7 +33,19 @@ Public Class Form_Riwayat_Transaksi
 
     End Sub
 
-    Private Sub Form_Riwayat_Transaksi_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Riwayat_Transaksi_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
+
+        If e.CloseReason = CloseReason.MdiFormClosing Then
+
+            Exit Sub
+
+        End If
+
+        ClosingValidate(e, Me)
+
+    End Sub
+
+    Private Sub Form_Riwayat_Transaksi_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
         OpenForm(fa)
 

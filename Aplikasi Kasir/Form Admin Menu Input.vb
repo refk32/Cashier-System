@@ -170,13 +170,13 @@ Public Class Form_Admin_Menu_Input
 
     Private Sub Form_Admin_Menu_Input_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        ClosingValidate(e, Me)
+        If e.CloseReason = CloseReason.MdiFormClosing Then
 
-        If e.Cancel = False Then
-
-            Form_Admin_Menu.DeleteBT.Enabled = True
+            Exit Sub
 
         End If
+
+        ClosingValidate(e, Me)
 
     End Sub
 
@@ -209,6 +209,12 @@ Public Class Form_Admin_Menu_Input
             KodeMakananTB.Text = kode_mkn
 
         End If
+
+    End Sub
+
+    Private Sub Form_Admin_Menu_Input_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
+        Form_Admin_Menu.DeleteBT.Enabled = True
 
     End Sub
 

@@ -113,19 +113,7 @@ Public Class Form_Master
 
     Private Sub Form_Master_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
 
-        Dim result As MsgBoxResult
-
-        result = MsgBox("Exit ?", vbYesNo, "Exit")
-
-        If result = vbYes Then
-
-            Application.Exit()
-
-        ElseIf result = vbNo Then
-
-            e.Cancel() = True
-
-        End If
+        e.Cancel = True
 
     End Sub
 

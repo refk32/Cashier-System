@@ -186,15 +186,16 @@ Public Class Form_Admin_Karyawan_Input
 
     End Sub
 
-    Private Sub Form_Admin_Karyawan_Input_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Admin_Karyawan_Input_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing
+
+        If e.CloseReason = CloseReason.MdiFormClosing Then
+
+            Exit Sub
+
+        End If
 
         ClosingValidate(e, Me)
 
-        If e.Cancel = False Then
-
-            Form_Admin_Karyawan.DeleteBT.Enabled = True
-
-        End If
 
     End Sub
 
@@ -248,4 +249,9 @@ Public Class Form_Admin_Karyawan_Input
 
     End Sub
 
+    Private Sub Form_Admin_Karyawan_Input_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
+        Form_Admin_Karyawan.DeleteBT.Enabled = True
+
+    End Sub
 End Class
