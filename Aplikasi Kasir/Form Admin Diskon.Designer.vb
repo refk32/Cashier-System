@@ -171,6 +171,7 @@ Partial Class Form_Admin_Diskon
         '
         'DataGridView2
         '
+        Me.DataGridView2.AllowUserToAddRows = False
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Location = New System.Drawing.Point(316, 288)
         Me.DataGridView2.Name = "DataGridView2"
