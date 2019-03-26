@@ -19,7 +19,8 @@ Module Koneksi_Module
 
     Public Sub Koneksi()
 
-        LokasiDB = "Data Source=localhost\SQLEXPRESS;Initial Catalog=Kasir_db;integrated security=true"
+        LokasiDB = IO.File.ReadAllText("Conn.udl").Remove(0, 83)
+        'LokasiDB = "Data Source=localhost\SQLEXPRESS;Initial Catalog=Kasir_db;integrated security=true"
         Conn = New SqlConnection(LokasiDB)
         If Conn.State = ConnectionState.Closed Then Conn.Open()
 

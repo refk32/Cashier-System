@@ -4,7 +4,8 @@ Imports System.Data.SqlClient
 Public Class Form_Admin_Menu
 
     Public fa As Form_Admin
-    Public a() As String
+    Public kode_mkn() As String
+    Public nama_mkn() As String
     Dim header = New String() {"Kode", "Nama", "Harga"}
 
     Private Sub Form_Admin_Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -45,11 +46,13 @@ Public Class Form_Admin_Menu
 
         Next
 
-        ReDim a(DataGridView1.Rows.Count)
+        ReDim kode_mkn(DataGridView1.Rows.Count)
+        ReDim nama_mkn(DataGridView1.Rows.Count)
 
         For i As Integer = 0 To DataGridView1.Rows.Count - 1
 
-            a(i) = DataGridView1.Rows(i).Cells(0).Value
+            kode_mkn(i) = DataGridView1.Rows(i).Cells(0).Value
+            nama_mkn(i) = DataGridView1.Rows(i).Cells(1).Value
 
         Next
 
@@ -103,12 +106,28 @@ Public Class Form_Admin_Menu
 
             Next
 
-            Form_Admin_Menu_Edit.kode = DataGridView1.CurrentRow.Cells(0).Value
-            Form_Admin_Menu_Edit.nama = DataGridView1.CurrentRow.Cells(1).Value
-            Form_Admin_Menu_Edit.harga = DataGridView1.CurrentRow.Cells(2).Value
+
+            ReDim nama_mkn(DataGridView1.Rows.Count)
+            For i As Integer = 0 To DataGridView1.Rows.Count - 1
+
+                nama_mkn(i) = DataGridView1.Rows(i).Cells(1).Value
+
+            Next
+
+            With Form_Admin_Menu_Edit
+
+                .kode = DataGridView1.CurrentRow.Cells(0).Value
+                'tetep harus pass variabel nama untuk pengecekan supaya nama tidak bisa duplikat
+                .nama = DataGridView1.CurrentRow.Cells(1).Value
+                .harga = DataGridView1.CurrentRow.Cells(2).Value
+
+            End With
 
             DeleteBT.Enabled = False
             OpenForm(Form_Admin_Menu_Edit)
+
+            'setting tb lngsung dri sini
+            Form_Admin_Menu_Edit.NamaMakananTB.Text = DataGridView1.CurrentRow.Cells(1).Value
 
         End If
 

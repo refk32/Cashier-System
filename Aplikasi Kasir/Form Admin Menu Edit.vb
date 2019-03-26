@@ -8,6 +8,11 @@ Public Class Form_Admin_Menu_Edit
     Public nama As Object
     Public harga As Object
 
+    Public nama_mkn() As String
+
+    'only for checking name
+    Dim tmp As String
+
     Private Sub SaveBT_Click(sender As Object, e As EventArgs) Handles SaveBT.Click
 
         Dim result As MsgBoxResult
@@ -30,17 +35,44 @@ Public Class Form_Admin_Menu_Edit
 
         KondisiAwal()
 
+        nama_mkn = Form_Admin_Menu.nama_mkn
+
     End Sub
 
     Sub KondisiAwal()
 
         KodeMakananTB.Text = kode
-        NamaMakananTB.Text = nama
         HargaTB.Text = harga
+        'tidak usah set namatb.text karena sudah diset dari form sebelumnya
 
     End Sub
 
     Private Sub NamaMakananTB_TextChanged(sender As Object, e As EventArgs) Handles NamaMakananTB.TextChanged
+
+        For Each s As String In nama_mkn
+
+            If s = nama Then
+
+                Continue For
+
+            End If
+
+            If Not String.IsNullOrWhiteSpace(s) Then
+
+                tmp = s & " "
+
+            End If
+
+            If NamaMakananTB.Text.Equals(s) Or NamaMakananTB.Text.Equals(tmp) Then
+
+                NamaMakananLBL.Visible = True
+                NamaMakananLBL.Text = "Nama makanan sudah ada"
+
+                Exit Sub
+
+            End If
+
+        Next
 
         If NamaMakananTB.Text.StartsWith(" ") Then
 

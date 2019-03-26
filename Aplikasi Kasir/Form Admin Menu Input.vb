@@ -4,15 +4,25 @@ Imports System.Text.RegularExpressions
 
 Public Class Form_Admin_Menu_Input
 
-    Dim kode() As String
+    Dim kode_mkn_array() As String
+    Dim nama_mkn_array() As String
+
     Dim kode_mkn As String
+    Dim nama_mkn As String
+
+    Dim tmp As String
 
     Private Sub Form_Admin_Menu_Input_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        kode = Form_Admin_Menu.a
+        'get array from form admin menu
+        With Form_Admin_Menu
+
+            kode_mkn_array = .kode_mkn
+            nama_mkn_array = .nama_mkn
+
+        End With
 
         DataGridView1.DataSource = DAFillDS("select kode_mkn from table_menu", "table_menu").Tables("table_menu")
-
         For Each row As DataGridViewRow In DataGridView1.Rows
 
             row.Cells(0).Value = row.Cells(0).Value.ToString().Remove(0, 1)
@@ -61,6 +71,25 @@ Public Class Form_Admin_Menu_Input
     End Sub
 
     Private Sub NamaMakananTB_TextChanged(sender As Object, e As EventArgs) Handles NamaMakananTB.TextChanged
+
+        For Each s As String In nama_mkn_array
+
+            If Not String.IsNullOrWhiteSpace(s) Then
+
+                tmp = s & " "
+
+            End If
+
+            If NamaMakananTB.Text.Equals(s) Or NamaMakananTB.Text.Equals(tmp) Then
+
+                NamaMakananLBL.Visible = True
+                NamaMakananLBL.Text = "Nama makanan sudah ada"
+
+                Exit Sub
+
+            End If
+
+        Next
 
         If NamaMakananTB.Text.StartsWith(" ") Then
 
