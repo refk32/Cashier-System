@@ -115,7 +115,7 @@ Module Koneksi_Module
 
     End Sub
 
-    Public Function AutoIncrement(tablename As String, pkname As String, _datagridview As DataGridView, Optional menu As Boolean = False) As String
+    Public Function AutoIncrement(tablename As String, pkname As String, _datagridview As DataGridView, Optional menu As Boolean = False, Optional initial As String = "F") As String 'menu = apakah autoincrement nya dipanggil untuk kode makanan, initial = bila menu true (auto increment kode makanan) maka initial harus diisi (F untuk makanan, D untuk minuman)
 
         Dim id As Integer = 0
         Dim id2 As String
@@ -123,7 +123,14 @@ Module Koneksi_Module
 
         Dim dt As DataTable
 
-        dt = DAFillDT("select " + pkname + " from " + tablename + " ")
+        If menu Then
+
+            dt = DAFillDT("select " + pkname + " from " + tablename + " where " & pkname & " LIKE '" & initial & "%' ")
+        Else
+
+            dt = DAFillDT("select " + pkname + " from " + tablename + " ")
+
+        End If
 
         If dt.Rows.Count > 0 Then
 

@@ -22,17 +22,9 @@ Public Class Form_Admin_Menu_Input
 
         End With
 
-        DataGridView1.DataSource = DAFillDS("select kode_mkn from table_menu", "table_menu").Tables("table_menu")
-        For Each row As DataGridViewRow In DataGridView1.Rows
-
-            row.Cells(0).Value = row.Cells(0).Value.ToString().Remove(0, 1)
-
-        Next
-
-        DataGridView1.Sort(DataGridView1.Columns(0), ListSortDirection.Ascending)
 
         'harus diinvisible dari sini setelah sort karena kalau dimatiin sebelum disort, jadinya tidak tersort
-        DataGridView1.Visible = False
+        DataGridView1.Visible = True
 
     End Sub
 
@@ -213,9 +205,11 @@ Public Class Form_Admin_Menu_Input
 
         If MakananRadio.Checked Then
 
+            FillDatagrid("F")
+
             Dim kode As String
 
-            kode = AutoIncrement("table_menu", "kode_mkn", DataGridView1, True)
+            kode = AutoIncrement("table_menu", "kode_mkn", DataGridView1, True, "F")
 
             kode_mkn = "F" & kode
 
@@ -229,12 +223,12 @@ Public Class Form_Admin_Menu_Input
 
         If MinumanRadio.Checked Then
 
+            FillDatagrid("D")
+
             Dim kode As String
 
-            kode = AutoIncrement("table_menu", "kode_mkn", DataGridView1, True)
-
+            kode = AutoIncrement("table_menu", "kode_mkn", DataGridView1, True, "D")
             kode_mkn = "D" & kode
-
             KodeMakananTB.Text = kode_mkn
 
         End If
@@ -244,6 +238,20 @@ Public Class Form_Admin_Menu_Input
     Private Sub Form_Admin_Menu_Input_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
         Form_Admin_Menu.DeleteBT.Enabled = True
+
+    End Sub
+
+    Sub FillDatagrid(s As String)
+
+        DataGridView1.DataSource = DAFillDS("select kode_mkn from table_menu where kode_mkn like '" & s & "%' ", "table_menu").Tables("table_menu")
+
+        For Each row As DataGridViewRow In DataGridView1.Rows
+
+            row.Cells(0).Value = row.Cells(0).Value.ToString().Remove(0, 1)
+
+        Next
+
+        DataGridView1.Sort(DataGridView1.Columns(0), ListSortDirection.Ascending)
 
     End Sub
 
