@@ -5,6 +5,7 @@ Imports System.Text.RegularExpressions
 Public Class Form_Admin_Karyawan_Input
 
     Public id() As String
+    Dim databox() As Object
 
     Private Sub SaveBT_Click(sender As Object, e As EventArgs) Handles SaveBT.Click
 
@@ -44,6 +45,11 @@ Public Class Form_Admin_Karyawan_Input
         JenisKelaminCB.Items.Add("wanita")
         JabatanCB.Items.Add("kasir")
         JabatanCB.Items.Add("admin")
+
+        Form_Master.ToolStrip1.Visible = False
+
+        databox = New Object() {NamaTB, JenisKelaminCB, JabatanCB, IDTB, PasswordTB, ConfirmTB, PertanyaanCB, JawabanTB}
+
         id = Form_Admin_Karyawan.a
 
     End Sub
@@ -195,8 +201,18 @@ Public Class Form_Admin_Karyawan_Input
 
         End If
 
-        ClosingValidate(e, Me)
+        For Each o As Object In databox
 
+            If Not String.IsNullOrWhiteSpace(o.Text) Then
+
+                ClosingValidate(e, Me)
+                Exit Sub
+
+            End If
+
+        Next
+
+        e.Cancel = False
 
     End Sub
 
@@ -253,7 +269,9 @@ Public Class Form_Admin_Karyawan_Input
     Private Sub Form_Admin_Karyawan_Input_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
         OpenForm(Form_Admin_Karyawan)
+        Form_Master.ToolStrip1.Visible = True
         Form_Admin_Karyawan.DeleteBT.Enabled = True
 
     End Sub
+
 End Class
