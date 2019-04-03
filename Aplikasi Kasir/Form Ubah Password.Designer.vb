@@ -38,7 +38,7 @@ Partial Class Form_Ubah_Password
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(494, 314)
+        Me.Label1.Location = New System.Drawing.Point(637, 275)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(143, 33)
         Me.Label1.TabIndex = 0
@@ -78,11 +78,11 @@ Partial Class Form_Ubah_Password
         'PasswordLBL
         '
         Me.PasswordLBL.AutoSize = True
-        Me.PasswordLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordLBL.ForeColor = System.Drawing.Color.Red
         Me.PasswordLBL.Location = New System.Drawing.Point(1095, 314)
         Me.PasswordLBL.Name = "PasswordLBL"
-        Me.PasswordLBL.Size = New System.Drawing.Size(118, 33)
+        Me.PasswordLBL.Size = New System.Drawing.Size(89, 26)
         Me.PasswordLBL.TabIndex = 19
         Me.PasswordLBL.Text = "Label10"
         Me.PasswordLBL.Visible = False
@@ -101,7 +101,7 @@ Partial Class Form_Ubah_Password
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(357, 416)
+        Me.Label3.Location = New System.Drawing.Point(637, 377)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(280, 33)
         Me.Label3.TabIndex = 20
@@ -110,11 +110,11 @@ Partial Class Form_Ubah_Password
         'ConfirmLBL
         '
         Me.ConfirmLBL.AutoSize = True
-        Me.ConfirmLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConfirmLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConfirmLBL.ForeColor = System.Drawing.Color.Red
         Me.ConfirmLBL.Location = New System.Drawing.Point(1095, 420)
         Me.ConfirmLBL.Name = "ConfirmLBL"
-        Me.ConfirmLBL.Size = New System.Drawing.Size(118, 33)
+        Me.ConfirmLBL.Size = New System.Drawing.Size(89, 26)
         Me.ConfirmLBL.TabIndex = 22
         Me.ConfirmLBL.Text = "Label10"
         Me.ConfirmLBL.Visible = False

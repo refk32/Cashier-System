@@ -3,6 +3,7 @@
 Public Class Form_Kasir
     Public nama As String
     Public id As String
+    Public pass As String
 
     Private Sub Form_Kasir_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -10,29 +11,6 @@ Public Class Form_Kasir
         IDLBL.Text = id
 
         Form_Master.ToolStripDropDownButton4.Text = nama
-
-    End Sub
-
-
-    Private Sub LogOutBt_Click(sender As Object, e As EventArgs) Handles LogOutBT.Click
-
-        For Each form As Form In Form_Master.MdiChildren
-
-            If Not form.Name = Me.Name Then
-
-                form.Close()
-
-            End If
-
-        Next
-
-        Form_Login.idTB.Text = ""
-        Form_Login.passTB.Text = ""
-
-        Me.Hide()
-        OpenForm(Form_Login)
-
-        Form_Master.ToolStrip2.Visible = False
 
     End Sub
 

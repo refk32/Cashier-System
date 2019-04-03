@@ -8,7 +8,7 @@ Public Class Form_Login
 
     Private Sub LoginBT_Click(sender As Object, e As EventArgs) Handles LoginBT.Click
 
-        'JANGAN BUANG DATATABLE BUAT CEK APAKAH ID DAN PASS BENAR
+        'JANGAN BUANG DATATABLE (BUAT CEK APAKAH ID DAN PASS BENAR)
         Dim dt As DataTable
 
         id = idTB.Text
@@ -20,7 +20,7 @@ Public Class Form_Login
 
             Dim jabatan As String
 
-            'Panggil function dari module koneksi, Itu function dalam function lol (dua-dua nya di koneksi module)
+            'Panggil function dari module
             jabatan = GetFromSqlDataReader("select jabatan_kry from table_karyawan where id_kry = '" + id + "' ", "String")
 
             'sama kek yang atas cuman ambil nama instead of jabatan
@@ -32,7 +32,8 @@ Public Class Form_Login
 
                 fa = New Form_Admin With {
                     .nama = nama,
-                    .id = idTB.Text
+                    .id = idTB.Text,
+                    .pass = pass
                 }
 
                 Form_Master.fa = fa
@@ -47,7 +48,8 @@ Public Class Form_Login
 
                 fk = New Form_Kasir With {
                     .id = id,
-                    .nama = nama
+                    .nama = nama,
+                    .pass = pass
                 }
 
                 Me.Hide()
@@ -86,7 +88,16 @@ Public Class Form_Login
 
     Private Sub Form_Login_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
 
-        If Not Me.Visible Then
+        If Me.Visible Then
+
+            With Form_Master
+
+                .ToolStrip1.Visible = False
+                .ToolStrip2.Visible = False
+
+            End With
+
+        Else
 
             idTB.Clear()
             passTB.Clear()
