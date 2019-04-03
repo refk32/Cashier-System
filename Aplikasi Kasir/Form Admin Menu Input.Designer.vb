@@ -22,8 +22,6 @@ Partial Class Form_Admin_Menu_Input
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.EventLog1 = New System.Diagnostics.EventLog()
         Me.KodeMakananTB = New System.Windows.Forms.TextBox()
         Me.NamaMakananTB = New System.Windows.Forms.TextBox()
         Me.HargaTB = New System.Windows.Forms.TextBox()
@@ -34,20 +32,14 @@ Partial Class Form_Admin_Menu_Input
         Me.KodeMakananLBL = New System.Windows.Forms.Label()
         Me.NamaMakananLBL = New System.Windows.Forms.Label()
         Me.HargaLBL = New System.Windows.Forms.Label()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.BackBT = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.MakananRadio = New System.Windows.Forms.RadioButton()
         Me.MinumanRadio = New System.Windows.Forms.RadioButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label5 = New System.Windows.Forms.Label()
-        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'EventLog1
-        '
-        Me.EventLog1.SynchronizingObject = Me
         '
         'KodeMakananTB
         '
@@ -238,14 +230,11 @@ Partial Class Form_Admin_Menu_Input
         Me.Controls.Add(Me.KodeMakananTB)
         Me.Name = "Form_Admin_Menu_Input"
         Me.Text = "Form_Admin_Menu_Input"
-        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents EventLog1 As EventLog
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
@@ -256,7 +245,6 @@ Partial Class Form_Admin_Menu_Input
     Friend WithEvents HargaLBL As Label
     Friend WithEvents NamaMakananLBL As Label
     Friend WithEvents KodeMakananLBL As Label
-    Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents BackBT As Button
     Friend WithEvents MinumanRadio As RadioButton
     Friend WithEvents MakananRadio As RadioButton

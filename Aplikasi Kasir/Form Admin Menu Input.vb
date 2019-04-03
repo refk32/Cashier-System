@@ -6,6 +6,7 @@ Public Class Form_Admin_Menu_Input
 
     Dim kode_mkn_array() As String
     Dim nama_mkn_array() As String
+    Dim databox() As Object
 
     Dim kode_mkn As String
     Dim nama_mkn As String
@@ -13,6 +14,8 @@ Public Class Form_Admin_Menu_Input
     Dim tmp As String
 
     Private Sub Form_Admin_Menu_Input_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Form_Master.ToolStrip1.Visible = False
 
         'get array from form admin menu
         With Form_Admin_Menu
@@ -22,9 +25,10 @@ Public Class Form_Admin_Menu_Input
 
         End With
 
+        databox = New Object() {KodeMakananTB, NamaMakananTB, HargaTB}
 
         'harus diinvisible dari sini setelah sort karena kalau dimatiin sebelum disort, jadinya tidak tersort
-        DataGridView1.Visible = True
+        DataGridView1.Visible = False
 
     End Sub
 
@@ -198,7 +202,18 @@ Public Class Form_Admin_Menu_Input
 
         End If
 
-        ClosingValidate(e, Me)
+        For Each o As Object In databox
+
+            If Not String.IsNullOrWhiteSpace(o.Text) Then
+
+                ClosingValidate(e, Me)
+                Exit Sub
+
+            End If
+
+        Next
+
+        e.Cancel = False
 
     End Sub
 
@@ -207,13 +222,12 @@ Public Class Form_Admin_Menu_Input
         If MakananRadio.Checked Then
 
             FillDatagrid("F")
+            FillDatagrid("F")
 
             Dim kode As String
 
             kode = AutoIncrement("table_menu", "kode_mkn", DataGridView1, True, "F")
-
             kode_mkn = "F" & kode
-
             KodeMakananTB.Text = kode_mkn
 
         End If
@@ -224,6 +238,7 @@ Public Class Form_Admin_Menu_Input
 
         If MinumanRadio.Checked Then
 
+            FillDatagrid("D")
             FillDatagrid("D")
 
             Dim kode As String
@@ -239,6 +254,7 @@ Public Class Form_Admin_Menu_Input
     Private Sub Form_Admin_Menu_Input_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
         OpenForm(Form_Admin_Menu)
+        Form_Master.ToolStrip1.Visible = True
         Form_Admin_Menu.DeleteBT.Enabled = True
 
     End Sub
@@ -253,8 +269,15 @@ Public Class Form_Admin_Menu_Input
 
         Next
 
+        DataGridView1.Visible = True
         DataGridView1.Sort(DataGridView1.Columns(0), ListSortDirection.Ascending)
+        DataGridView1.Visible = False
 
     End Sub
 
+    Private Sub KodeMakananTB_TextChanged(sender As Object, e As EventArgs) Handles KodeMakananTB.TextChanged
+
+        ControlSave()
+
+    End Sub
 End Class

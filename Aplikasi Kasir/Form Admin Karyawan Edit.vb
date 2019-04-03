@@ -17,6 +17,8 @@ Public Class Form_Admin_Karyawan_Edit
         PertanyaanCB.SelectedIndex = PertanyaanCB.FindStringExact(data(5))
         JawabanTB.Text = data(6)
 
+        Form_Master.ToolStrip1.Visible = False
+
     End Sub
 
     Private Sub Form_Admin_Karyawan_Edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -227,6 +229,7 @@ Public Class Form_Admin_Karyawan_Edit
     Private Sub Form_Admin_Karyawan_Edit_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
         OpenForm(Form_Admin_Karyawan)
+        Form_Master.ToolStrip1.Visible = True
         Form_Admin_Karyawan.DeleteBT.Enabled = True
 
     End Sub
