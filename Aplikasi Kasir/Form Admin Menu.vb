@@ -7,11 +7,19 @@ Public Class Form_Admin_Menu
     Public kode_mkn() As String
     Public nama_mkn() As String
     Dim header = New String() {"Kode", "Nama", "Harga"}
+    Dim radios() As RadioButton
 
     Private Sub Form_Admin_Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Me.CenterToScreen()
+        radios = New RadioButton() {TertinggiRadio, TerendahRadio, MakananRadio, MinumanRadio}
 
+        For i As Integer = 0 To DataGridView1.Columns.Count - 1
+
+            DataGridView1.Columns(i).HeaderText = header(i)
+
+        Next
+
+        Me.CenterToScreen()
         DisplayMenu()
 
     End Sub
@@ -62,17 +70,7 @@ Public Class Form_Admin_Menu
 
     End Sub
 
-    Public Sub DisplayMenu()
 
-        DataGridView1.DataSource = (DAFillDS("select * from table_menu", "table_menu").Tables("table_menu"))
-
-        For i As Integer = 0 To DataGridView1.Columns.Count - 1
-
-            DataGridView1.Columns(i).HeaderText = header(i)
-
-        Next
-
-    End Sub
 
     Private Sub EditBT_Click(sender As Object, e As EventArgs) Handles EditBT.Click
 
@@ -168,6 +166,114 @@ Public Class Form_Admin_Menu
     Private Sub Form_Admin_Menu_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
         OpenForm(fa)
+
+    End Sub
+
+    Private Sub TertinggiRadio_CheckedChanged(sender As Object, e As EventArgs) Handles TertinggiRadio.CheckedChanged
+
+        Sort()
+
+    End Sub
+
+    Private Sub TerendahRadio_CheckedChanged(sender As Object, e As EventArgs) Handles TerendahRadio.CheckedChanged
+
+        Sort()
+
+    End Sub
+
+    Sub Sort()
+
+        If TertinggiRadio.Checked Then
+
+            DataGridView1.Sort(DataGridView1.Columns(2), ListSortDirection.Descending)
+
+        ElseIf TerendahRadio.Checked Then
+
+            DataGridView1.Sort(DataGridView1.Columns(2), ListSortDirection.Ascending)
+
+        ElseIf AZRadio.Checked Then
+
+            DataGridView1.Sort(DataGridView1.Columns(1), ListSortDirection.Ascending)
+
+        ElseIf ZARadio.Checked Then
+
+            DataGridView1.Sort(DataGridView1.Columns(1), ListSortDirection.Descending)
+
+
+        End If
+
+    End Sub
+
+    Private Sub MakananRadio_CheckedChanged(sender As Object, e As EventArgs) Handles MakananRadio.CheckedChanged
+
+        DisplayMenu()
+
+    End Sub
+
+    Private Sub MinumanRadio_CheckedChanged(sender As Object, e As EventArgs) Handles MinumanRadio.CheckedChanged
+
+        DisplayMenu()
+
+    End Sub
+
+    Private Sub SemuaRadio_CheckedChanged(sender As Object, e As EventArgs) Handles SemuaRadio.CheckedChanged
+
+        DisplayMenu()
+
+    End Sub
+
+    Private Sub Form_Admin_Menu_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
+
+        If Me.Visible Then
+
+            KondisiAwal()
+
+        End If
+
+    End Sub
+
+    Public Sub DisplayMenu()
+
+        If SemuaRadio.Checked Then
+
+            DataGridView1.DataSource = (DAFillDS("select * from table_menu", "table_menu").Tables("table_menu"))
+
+        ElseIf MakananRadio.Checked Then
+
+            DataGridView1.DataSource = DAFillDS("select * from table_menu where kode_mkn LIKE 'F%'", "table_menu").Tables("table_menu")
+
+        ElseIf MinumanRadio.Checked Then
+
+            DataGridView1.DataSource = DAFillDS("select * from table_menu where kode_mkn LIKE 'D%'", "table_menu").Tables("table_menu")
+
+        End If
+
+        Sort()
+
+    End Sub
+
+    Sub KondisiAwal()
+
+        For Each radio As RadioButton In radios
+
+            radio.Checked = False
+
+        Next
+
+        DisplayMenu()
+        SemuaRadio.Checked = True
+
+    End Sub
+
+    Private Sub AZ_CheckedChanged(sender As Object, e As EventArgs) Handles AZRadio.CheckedChanged
+
+        Sort()
+
+    End Sub
+
+    Private Sub ZARadio_CheckedChanged(sender As Object, e As EventArgs) Handles ZARadio.CheckedChanged
+
+        Sort()
 
     End Sub
 End Class
