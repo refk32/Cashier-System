@@ -203,6 +203,7 @@ Partial Class Form_Admin_Menu_Input
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(95, 150)
         Me.DataGridView1.TabIndex = 14
+        Me.DataGridView1.Visible = False
         '
         'Label5
         '

@@ -83,4 +83,17 @@ Public Class Form_Login
         XButton()
 
     End Sub
+
+    Private Sub Form_Login_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
+
+        If Not Me.Visible Then
+
+            idTB.Clear()
+            passTB.Clear()
+            'Select() = focus
+            idTB.Select()
+
+        End If
+
+    End Sub
 End Class

@@ -4,24 +4,18 @@ Imports System.Text.RegularExpressions
 
 Public Class Form_Admin_Karyawan_Edit
 
-    Public nama As Object
-    Public jeniskelamin As Object
-    Public jabatan As Object
-    Public id As Object
-    Public password As Object
-    Public pertanyaan As Object
-    Public jawaban As Object
+    Public data(6) As Object
 
     Sub KondisiAwal()
 
-        NamaTB.Text = nama
-        JenisKelaminCB.SelectedIndex = JenisKelaminCB.FindStringExact(jeniskelamin)
-        JabatanCB.SelectedIndex = JabatanCB.FindStringExact(jabatan)
-        IDTB.Text = id
-        PasswordTB.Text = password
-        ConfirmTB.Text = password
-        PertanyaanCB.SelectedIndex = PertanyaanCB.FindStringExact(pertanyaan)
-        JawabanTB.Text = jawaban
+        NamaTB.Text = data(0)
+        JenisKelaminCB.SelectedIndex = JenisKelaminCB.FindStringExact(data(1))
+        JabatanCB.SelectedIndex = JabatanCB.FindStringExact(data(2))
+        IDTB.Text = data(3)
+        PasswordTB.Text = data(4)
+        ConfirmTB.Text = data(4)
+        PertanyaanCB.SelectedIndex = PertanyaanCB.FindStringExact(data(5))
+        JawabanTB.Text = data(6)
 
     End Sub
 
@@ -43,6 +37,7 @@ Public Class Form_Admin_Karyawan_Edit
 
             MsgBox("Edit berhasil")
             Form_Admin_Karyawan.DisplayMenu()
+            OpenForm(Form_Admin_Karyawan)
             ClosingWithoutValidate(Me)
 
         End If
@@ -231,6 +226,7 @@ Public Class Form_Admin_Karyawan_Edit
 
     Private Sub Form_Admin_Karyawan_Edit_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
+        OpenForm(Form_Admin_Karyawan)
         Form_Admin_Karyawan.DeleteBT.Enabled = True
 
     End Sub

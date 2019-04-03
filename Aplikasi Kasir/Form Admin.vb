@@ -59,6 +59,8 @@ Public Class Form_Admin
         NamaLBL.Text = nama
         IDLBL.Text = id
 
+        Form_Master.ToolStripDropDownButton3.Text = nama
+
     End Sub
 
     Private Sub Form_Admin_Closing(sender As Object, e As FormClosingEventArgs) Handles Me.Closing

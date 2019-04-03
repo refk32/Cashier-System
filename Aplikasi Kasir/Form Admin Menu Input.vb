@@ -46,6 +46,7 @@ Public Class Form_Admin_Menu_Input
                 KodeMakananTB.Text = ""
                 NamaMakananTB.Text = ""
                 HargaTB.Text = ""
+                OpenForm(Form_Admin_Menu)
                 ClosingWithoutValidate(Me)
 
             Catch ex As SqlException
@@ -237,6 +238,7 @@ Public Class Form_Admin_Menu_Input
 
     Private Sub Form_Admin_Menu_Input_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
+        OpenForm(Form_Admin_Menu)
         Form_Admin_Menu.DeleteBT.Enabled = True
 
     End Sub

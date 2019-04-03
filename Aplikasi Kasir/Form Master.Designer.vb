@@ -24,7 +24,6 @@ Partial Class Form_Master
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Master))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.Edit = New System.Windows.Forms.ToolStripDropDownButton()
         Me.KaryawanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,31 +32,28 @@ Partial Class Form_Master
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.RiwayatTransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripDropDownButton3 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.UbahPasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripDropDownButton2 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.KasirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripDropDownButton4 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.UbahPasswordToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogOutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         Me.ToolStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Edit, Me.ToolStripDropDownButton1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Edit, Me.ToolStripDropDownButton1, Me.ToolStripDropDownButton3})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(800, 25)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         Me.ToolStrip1.Visible = False
-        '
-        'ToolStrip2
-        '
-        Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2})
-        Me.ToolStrip2.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip2.Name = "ToolStrip2"
-        Me.ToolStrip2.Size = New System.Drawing.Size(800, 25)
-        Me.ToolStrip2.TabIndex = 3
-        Me.ToolStrip2.Text = "ToolStrip2"
-        Me.ToolStrip2.Visible = False
         '
         'Edit
         '
@@ -115,6 +111,39 @@ Partial Class Form_Master
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.ReportToolStripMenuItem.Text = "Report"
         '
+        'ToolStripDropDownButton3
+        '
+        Me.ToolStripDropDownButton3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripDropDownButton3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UbahPasswordToolStripMenuItem, Me.LogoutToolStripMenuItem})
+        Me.ToolStripDropDownButton3.Image = CType(resources.GetObject("ToolStripDropDownButton3.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton3.Name = "ToolStripDropDownButton3"
+        Me.ToolStripDropDownButton3.Size = New System.Drawing.Size(56, 22)
+        Me.ToolStripDropDownButton3.Text = "Admin"
+        '
+        'UbahPasswordToolStripMenuItem
+        '
+        Me.UbahPasswordToolStripMenuItem.Name = "UbahPasswordToolStripMenuItem"
+        Me.UbahPasswordToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UbahPasswordToolStripMenuItem.Text = "Ubah Password"
+        '
+        'LogoutToolStripMenuItem
+        '
+        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LogoutToolStripMenuItem.Text = "Log Out"
+        '
+        'ToolStrip2
+        '
+        Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton4})
+        Me.ToolStrip2.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip2.Name = "ToolStrip2"
+        Me.ToolStrip2.Size = New System.Drawing.Size(800, 25)
+        Me.ToolStrip2.TabIndex = 3
+        Me.ToolStrip2.Text = "ToolStrip2"
+        Me.ToolStrip2.Visible = False
+        '
         'ToolStripDropDownButton2
         '
         Me.ToolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
@@ -130,6 +159,29 @@ Partial Class Form_Master
         Me.KasirToolStripMenuItem.Name = "KasirToolStripMenuItem"
         Me.KasirToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.KasirToolStripMenuItem.Text = "Kasir"
+        '
+        'ToolStripDropDownButton4
+        '
+        Me.ToolStripDropDownButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripDropDownButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripDropDownButton4.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UbahPasswordToolStripMenuItem1, Me.LogOutToolStripMenuItem1})
+        Me.ToolStripDropDownButton4.Image = CType(resources.GetObject("ToolStripDropDownButton4.Image"), System.Drawing.Image)
+        Me.ToolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton4.Name = "ToolStripDropDownButton4"
+        Me.ToolStripDropDownButton4.Size = New System.Drawing.Size(45, 22)
+        Me.ToolStripDropDownButton4.Text = "Kasir"
+        '
+        'UbahPasswordToolStripMenuItem1
+        '
+        Me.UbahPasswordToolStripMenuItem1.Name = "UbahPasswordToolStripMenuItem1"
+        Me.UbahPasswordToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UbahPasswordToolStripMenuItem1.Text = "Ubah Password"
+        '
+        'LogOutToolStripMenuItem1
+        '
+        Me.LogOutToolStripMenuItem1.Name = "LogOutToolStripMenuItem1"
+        Me.LogOutToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LogOutToolStripMenuItem1.Text = "Log Out"
         '
         'Form_Master
         '
@@ -165,4 +217,10 @@ Partial Class Form_Master
     Friend WithEvents ToolStrip2 As ToolStrip
     Friend WithEvents ToolStripDropDownButton2 As ToolStripDropDownButton
     Friend WithEvents KasirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripDropDownButton3 As ToolStripDropDownButton
+    Friend WithEvents UbahPasswordToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripDropDownButton4 As ToolStripDropDownButton
+    Friend WithEvents UbahPasswordToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents LogOutToolStripMenuItem1 As ToolStripMenuItem
 End Class

@@ -9,6 +9,8 @@ Public Class Form_Kasir
         NamaLBL.Text = nama
         IDLBL.Text = id
 
+        Form_Master.ToolStripDropDownButton4.Text = nama
+
     End Sub
 
 
