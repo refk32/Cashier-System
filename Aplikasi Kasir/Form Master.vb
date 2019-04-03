@@ -96,7 +96,7 @@ Public Class Form_Master
         CloseAllForm()
 
         OpenForm(Form_Ubah_Password)
-        Form_Ubah_Password.PassForm(fa, fa.id)
+        Form_Ubah_Password.PassForm(fa, fa.id, fa.pass)
         fa.Hide()
 
     End Sub
@@ -106,7 +106,7 @@ Public Class Form_Master
         CloseAllForm()
 
         OpenForm(Form_Ubah_Password)
-        Form_Ubah_Password.PassForm(fk, fk.id)
+        Form_Ubah_Password.PassForm(fk, fk.id, fk.pass)
         fk.Hide()
 
     End Sub
@@ -119,6 +119,9 @@ Public Class Form_Master
 
                 fa = form
 
+            ElseIf form.Name = "Form_Kasir" Then
+
+                fk = form
 
             Else
 
@@ -131,4 +134,19 @@ Public Class Form_Master
 
     End Sub
 
+    Private Sub LogOutToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem1.Click
+
+        CloseAllForm()
+        fk.Hide()
+        OpenForm(Form_Login)
+
+    End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+
+        CloseAllForm()
+        fa.Hide()
+        OpenForm(Form_Login)
+
+    End Sub
 End Class

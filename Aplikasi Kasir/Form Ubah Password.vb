@@ -4,6 +4,7 @@ Imports System.Data.SqlClient
 Public Class Form_Ubah_Password
 
     Public ID As String
+    Public pass As String
     Private fa As Form_Admin
     Private fk As Form_Kasir
 
@@ -26,7 +27,20 @@ Public Class Form_Ubah_Password
 
     Private Sub PasswordTB_TextChanged(sender As Object, e As EventArgs) Handles PasswordTB.TextChanged
 
-        If PasswordTB.Text.Contains(" ") Then
+        'special treatment untuk ubah password dari form admin
+        If Not fa Is Nothing And PasswordTB.Text.Equals(pass) Then
+
+            PasswordLBL.Visible = True
+            PasswordLBL.Text = "Password tidak boleh sama dengan sebelumnya"
+
+
+            'special treatment untuk ubah password dari form kasir
+        ElseIf Not fk Is Nothing And PasswordTB.Text.Equals(pass) Then
+
+            PasswordLBL.Visible = True
+            PasswordLBL.Text = "Password tidak boleh sama dengan sebelumnya"
+
+        ElseIf PasswordTB.Text.Contains(" ") Then
 
             PasswordLBL.Visible = True
             PasswordLBL.Text = "Tidak boleh ada spasi"
@@ -37,6 +51,7 @@ Public Class Form_Ubah_Password
 
         End If
 
+        ControlConfirm()
         ControlSave()
 
     End Sub
@@ -44,17 +59,7 @@ Public Class Form_Ubah_Password
 
     Private Sub PasswordTB2_TextChanged(sender As Object, e As EventArgs) Handles ConfirmTB.TextChanged
 
-        If Not String.Equals(PasswordTB.Text, ConfirmTB.Text) And Not String.IsNullOrWhiteSpace(ConfirmTB.Text) Then
-
-            ConfirmLBL.Visible = True
-            ConfirmLBL.Text = "Password harus sama"
-
-        Else
-
-            ConfirmLBL.Visible = False
-
-        End If
-
+        ControlConfirm()
         ControlSave()
 
     End Sub
@@ -68,6 +73,21 @@ Public Class Form_Ubah_Password
         Else
 
             OkBT.Enabled = True
+
+        End If
+
+    End Sub
+
+    Sub ControlConfirm()
+
+        If Not String.Equals(PasswordTB.Text, ConfirmTB.Text) And Not String.IsNullOrWhiteSpace(ConfirmTB.Text) Then
+
+            ConfirmLBL.Visible = True
+            ConfirmLBL.Text = "Password harus sama"
+
+        Else
+
+            ConfirmLBL.Visible = False
 
         End If
 
@@ -119,7 +139,7 @@ Public Class Form_Ubah_Password
 
     End Sub
 
-    Public Sub PassForm(form As Form, id2 As String)
+    Public Sub PassForm(form As Form, id2 As String, Optional pass2 As String = "")
 
         If form.Name = Form_Admin.Name Then
 
@@ -132,6 +152,7 @@ Public Class Form_Ubah_Password
         End If
 
         ID = id2
+        pass = pass2
 
     End Sub
 

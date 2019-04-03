@@ -174,13 +174,13 @@ Partial Class Form_Master
         'UbahPasswordToolStripMenuItem1
         '
         Me.UbahPasswordToolStripMenuItem1.Name = "UbahPasswordToolStripMenuItem1"
-        Me.UbahPasswordToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UbahPasswordToolStripMenuItem1.Size = New System.Drawing.Size(155, 22)
         Me.UbahPasswordToolStripMenuItem1.Text = "Ubah Password"
         '
         'LogOutToolStripMenuItem1
         '
         Me.LogOutToolStripMenuItem1.Name = "LogOutToolStripMenuItem1"
-        Me.LogOutToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LogOutToolStripMenuItem1.Size = New System.Drawing.Size(155, 22)
         Me.LogOutToolStripMenuItem1.Text = "Log Out"
         '
         'Form_Master

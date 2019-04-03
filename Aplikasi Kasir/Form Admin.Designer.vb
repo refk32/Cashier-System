@@ -27,7 +27,6 @@ Partial Class Form_Admin
         Me.NamaLBL = New System.Windows.Forms.Label()
         Me.IDLBL = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.LogOutBT = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -82,16 +81,6 @@ Partial Class Form_Admin
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "ID"
         '
-        'LogOutBT
-        '
-        Me.LogOutBT.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogOutBT.Location = New System.Drawing.Point(684, 588)
-        Me.LogOutBT.Name = "LogOutBT"
-        Me.LogOutBT.Size = New System.Drawing.Size(236, 170)
-        Me.LogOutBT.TabIndex = 9
-        Me.LogOutBT.Text = "Log Out"
-        Me.LogOutBT.UseVisualStyleBackColor = True
-        '
         'PictureBox2
         '
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
@@ -109,7 +98,6 @@ Partial Class Form_Admin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1604, 882)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.LogOutBT)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.IDLBL)
         Me.Controls.Add(Me.NamaLBL)
@@ -128,6 +116,5 @@ Partial Class Form_Admin
     Friend WithEvents NamaLBL As Label
     Friend WithEvents IDLBL As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents LogOutBT As Button
     Friend WithEvents PictureBox2 As PictureBox
 End Class
