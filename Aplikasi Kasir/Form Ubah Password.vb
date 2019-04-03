@@ -4,6 +4,8 @@ Imports System.Data.SqlClient
 Public Class Form_Ubah_Password
 
     Public ID As String
+    Private fa As Form_Admin
+    Private fk As Form_Kasir
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles OkBT.Click
 
@@ -17,7 +19,6 @@ Public Class Form_Ubah_Password
             ExecuteNonQuery_Func(query)
             MsgBox("Edit berhasil")
             Me.Close()
-            Form_Login.Show()
 
         End If
 
@@ -72,9 +73,21 @@ Public Class Form_Ubah_Password
 
     End Sub
 
-    Private Sub Form_Ubah_Password_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form_Ubah_Password_Closed(sender As Object, e As FormClosedEventArgs) Handles Me.Closed
 
-        Form_Login.Show()
+        If Not fa Is Nothing Then
+
+            OpenForm(fa)
+
+        ElseIf Not fk Is Nothing Then
+
+            OpenForm(fk)
+
+        Else
+
+            OpenForm(Form_Login)
+
+        End If
 
     End Sub
 
@@ -105,4 +118,21 @@ Public Class Form_Ubah_Password
         End If
 
     End Sub
+
+    Public Sub PassForm(form As Form, id2 As String)
+
+        If form.Name = Form_Admin.Name Then
+
+            fa = form
+
+        ElseIf form.Name = Form_Kasir.Name Then
+
+            fk = form
+
+        End If
+
+        ID = id2
+
+    End Sub
+
 End Class

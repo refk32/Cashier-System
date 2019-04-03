@@ -57,6 +57,7 @@ Public Class Form_Admin_Menu
         Next
 
         OpenForm(Form_Admin_Menu_Input)
+        Me.Hide()
         DeleteBT.Enabled = False
 
     End Sub
@@ -124,6 +125,7 @@ Public Class Form_Admin_Menu
             End With
 
             DeleteBT.Enabled = False
+            Me.Hide()
             OpenForm(Form_Admin_Menu_Edit)
 
             'setting tb lngsung dri sini

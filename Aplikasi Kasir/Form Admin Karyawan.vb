@@ -63,6 +63,7 @@ Rahasia"}
         Next
 
         DeleteBT.Enabled = False
+        Me.Hide()
         OpenForm(Form_Admin_Karyawan_Input)
 
     End Sub
@@ -100,15 +101,14 @@ Rahasia"}
 
             Next
 
-            Form_Admin_Karyawan_Edit.nama = DataGridView1.CurrentRow.Cells(0).Value
-            Form_Admin_Karyawan_Edit.jeniskelamin = DataGridView1.CurrentRow.Cells(1).Value
-            Form_Admin_Karyawan_Edit.jabatan = DataGridView1.CurrentRow.Cells(2).Value
-            Form_Admin_Karyawan_Edit.id = DataGridView1.CurrentRow.Cells(3).Value
-            Form_Admin_Karyawan_Edit.password = DataGridView1.CurrentRow.Cells(4).Value
-            Form_Admin_Karyawan_Edit.pertanyaan = DataGridView1.CurrentRow.Cells(5).Value
-            Form_Admin_Karyawan_Edit.jawaban = DataGridView1.CurrentRow.Cells(6).Value
+            For i As Integer = 0 To DataGridView1.ColumnCount - 1
+
+                Form_Admin_Karyawan_Edit.data(i) = DataGridView1.CurrentRow.Cells(i).Value
+
+            Next
 
             DeleteBT.Enabled = False
+            Me.Hide()
             OpenForm(Form_Admin_Karyawan_Edit)
 
         End If

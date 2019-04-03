@@ -16,21 +16,7 @@ Public Class Form_Master
 
     Private Sub KaryawanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KaryawanToolStripMenuItem.Click
 
-        For Each form As Form In Me.MdiChildren
-
-            If form.Name = "Form_Admin" Then
-
-                fa = form
-
-
-            Else
-
-                ClosingWithoutValidate(form)
-
-
-            End If
-
-        Next
+        CloseAllForm()
 
         Form_Admin_Karyawan.fa = fa
         Form_Admin_Karyawan.id = fa.id
@@ -41,21 +27,7 @@ Public Class Form_Master
 
     Private Sub MenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
 
-        For Each form As Form In Me.MdiChildren
-
-            If form.Name = "Form_Admin" Then
-
-                fa = form
-
-
-            Else
-
-                '_validate itu ada di module buat validasi close atau gak
-                ClosingWithoutValidate(form)
-
-            End If
-
-        Next
+        CloseAllForm()
 
         Form_Admin_Menu.fa = fa
         fa.Hide()
@@ -65,21 +37,7 @@ Public Class Form_Master
 
     Private Sub RiwayatTransaksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RiwayatTransaksiToolStripMenuItem.Click
 
-        For Each form As Form In Me.MdiChildren
-
-            If form.Name = "Form_Admin" Then
-
-                fa = form
-
-
-            Else
-
-                '_validate itu ada di module buat validasi close atau gak
-                ClosingWithoutValidate(form)
-
-            End If
-
-        Next
+        CloseAllForm()
 
         Form_Riwayat_Transaksi.fa = fa
         fa.Hide()
@@ -89,21 +47,7 @@ Public Class Form_Master
 
     Private Sub ReportToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportToolStripMenuItem.Click
 
-        For Each form As Form In Me.MdiChildren
-
-            If form.Name = "Form_Admin" Then
-
-                fa = form
-
-
-            Else
-
-                '_validate itu ada di module buat validasi close atau gak
-                ClosingWithoutValidate(form)
-
-            End If
-
-        Next
+        CloseAllForm()
 
         Form_Report.fa = fa
         fa.Hide()
@@ -129,21 +73,7 @@ Public Class Form_Master
 
     Private Sub DiskonToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DiskonToolStripMenuItem.Click
 
-        For Each form As Form In Me.MdiChildren
-
-            If form.Name = "Form_Admin" Then
-
-                fa = form
-
-
-            Else
-
-                '_validate itu ada di module buat validasi close atau gak
-                ClosingWithoutValidate(form)
-
-            End If
-
-        Next
+        CloseAllForm()
 
         fa.Hide()
         Form_Admin_Diskon.fa = fa
@@ -153,6 +83,36 @@ Public Class Form_Master
 
     Private Sub PajakToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PajakToolStripMenuItem.Click
 
+        CloseAllForm()
+
+        Form_Admin_Pajak.fa = fa
+        fa.Hide()
+        OpenForm(Form_Admin_Pajak)
+
+    End Sub
+
+    Private Sub UbahPasswordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPasswordToolStripMenuItem.Click
+
+        CloseAllForm()
+
+        OpenForm(Form_Ubah_Password)
+        Form_Ubah_Password.PassForm(fa, fa.id)
+        fa.Hide()
+
+    End Sub
+
+    Private Sub UbahPasswordToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UbahPasswordToolStripMenuItem1.Click
+
+        CloseAllForm()
+
+        OpenForm(Form_Ubah_Password)
+        Form_Ubah_Password.PassForm(fk, fk.id)
+        fk.Hide()
+
+    End Sub
+
+    Sub CloseAllForm()
+
         For Each form As Form In Me.MdiChildren
 
             If form.Name = "Form_Admin" Then
@@ -169,9 +129,6 @@ Public Class Form_Master
 
         Next
 
-        Form_Admin_Pajak.fa = fa
-        fa.Hide()
-        OpenForm(Form_Admin_Pajak)
-
     End Sub
+
 End Class

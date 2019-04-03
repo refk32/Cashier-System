@@ -25,6 +25,7 @@ Public Class Form_Admin_Menu_Edit
 
             MsgBox("Edit berhasil")
             Form_Admin_Menu.DisplayMenu()
+            OpenForm(Form_Admin_Menu)
             ClosingWithoutValidate(Me)
 
         End If
@@ -194,6 +195,7 @@ Public Class Form_Admin_Menu_Edit
 
     Private Sub Form_Admin_Menu_Edit_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
+        OpenForm(Form_Admin_Menu)
         Form_Admin_Menu.DeleteBT.Enabled = True
 
     End Sub

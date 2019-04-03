@@ -21,6 +21,7 @@ Public Class Form_Admin_Karyawan_Input
 
                 MsgBox("input data berhasil")
                 Form_Admin_Karyawan.DisplayMenu()
+                OpenForm(Form_Admin_Karyawan)
                 ClosingWithoutValidate(Me)
 
             Catch ex As SqlException
@@ -251,6 +252,7 @@ Public Class Form_Admin_Karyawan_Input
 
     Private Sub Form_Admin_Karyawan_Input_Closed(sender As Object, e As EventArgs) Handles Me.Closed
 
+        OpenForm(Form_Admin_Karyawan)
         Form_Admin_Karyawan.DeleteBT.Enabled = True
 
     End Sub
